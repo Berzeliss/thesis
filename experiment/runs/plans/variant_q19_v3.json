@@ -1,0 +1,144 @@
+[
+  {
+    "Plan": {
+      "Node Type": "Aggregate",
+      "Strategy": "Plain",
+      "Partial Mode": "Finalize",
+      "Parallel Aware": false,
+      "Async Capable": false,
+      "Startup Cost": 1954103.43,
+      "Total Cost": 1954103.44,
+      "Plan Rows": 1,
+      "Plan Width": 32,
+      "Actual Startup Time": 12970.025,
+      "Actual Total Time": 12982.401,
+      "Actual Rows": 1,
+      "Actual Loops": 1,
+      "Plans": [
+        {
+          "Node Type": "Gather",
+          "Parent Relationship": "Outer",
+          "Parallel Aware": false,
+          "Async Capable": false,
+          "Startup Cost": 1954103.21,
+          "Total Cost": 1954103.42,
+          "Plan Rows": 2,
+          "Plan Width": 32,
+          "Actual Startup Time": 12969.798,
+          "Actual Total Time": 12982.389,
+          "Actual Rows": 3,
+          "Actual Loops": 1,
+          "Workers Planned": 2,
+          "Workers Launched": 2,
+          "Single Copy": false,
+          "Plans": [
+            {
+              "Node Type": "Aggregate",
+              "Strategy": "Plain",
+              "Partial Mode": "Partial",
+              "Parent Relationship": "Outer",
+              "Parallel Aware": false,
+              "Async Capable": false,
+              "Startup Cost": 1953103.21,
+              "Total Cost": 1953103.22,
+              "Plan Rows": 1,
+              "Plan Width": 32,
+              "Actual Startup Time": 12932.336,
+              "Actual Total Time": 12932.338,
+              "Actual Rows": 1,
+              "Actual Loops": 3,
+              "Workers": [],
+              "Plans": [
+                {
+                  "Node Type": "Hash Join",
+                  "Parent Relationship": "Outer",
+                  "Parallel Aware": true,
+                  "Async Capable": false,
+                  "Join Type": "Inner",
+                  "Startup Cost": 76431.22,
+                  "Total Cost": 1953099.74,
+                  "Plan Rows": 462,
+                  "Plan Width": 12,
+                  "Actual Startup Time": 723.921,
+                  "Actual Total Time": 12930.825,
+                  "Actual Rows": 370,
+                  "Actual Loops": 3,
+                  "Inner Unique": false,
+                  "Hash Cond": "(lineitem.l_partkey = part.p_partkey)",
+                  "Join Filter": "(((part.p_brand = 'Brand#12'::bpchar) AND (part.p_container = ANY ('{\"SM CASE\",\"SM BOX\",\"SM PACK\",\"SM PKG\"}'::bpchar[])) AND (lineitem.l_quantity >= '1'::numeric) AND (lineitem.l_quantity <= '10'::numeric) AND (part.p_size <= 5)) OR ((part.p_brand = 'Brand#23'::bpchar) AND (part.p_container = ANY ('{\"MED BAG\",\"MED BOX\",\"MED PKG\",\"MED PACK\"}'::bpchar[])) AND (lineitem.l_quantity >= '10'::numeric) AND (lineitem.l_quantity <= '20'::numeric) AND (part.p_size <= 10)) OR ((part.p_brand = 'Brand#34'::bpchar) AND (part.p_container = ANY ('{\"LG CASE\",\"LG BOX\",\"LG PACK\",\"LG PKG\"}'::bpchar[])) AND (lineitem.l_quantity >= '20'::numeric) AND (lineitem.l_quantity <= '30'::numeric) AND (part.p_size <= 15)))",
+                  "Rows Removed by Join Filter": 647,
+                  "Workers": [],
+                  "Plans": [
+                    {
+                      "Node Type": "Seq Scan",
+                      "Parent Relationship": "Outer",
+                      "Parallel Aware": true,
+                      "Async Capable": false,
+                      "Relation Name": "lineitem",
+                      "Alias": "lineitem",
+                      "Startup Cost": 0.0,
+                      "Total Cost": 1874962.95,
+                      "Plan Rows": 448115,
+                      "Plan Width": 21,
+                      "Actual Startup Time": 0.748,
+                      "Actual Total Time": 12078.785,
+                      "Actual Rows": 428115,
+                      "Actual Loops": 3,
+                      "Filter": "((l_shipmode = ANY ('{AIR,\"AIR REG\"}'::bpchar[])) AND (l_shipinstruct = 'DELIVER IN PERSON'::bpchar) AND (((l_quantity >= '1'::numeric) AND (l_quantity <= '10'::numeric)) OR ((l_quantity >= '10'::numeric) AND (l_quantity <= '20'::numeric)) OR ((l_quantity >= '20'::numeric) AND (l_quantity <= '30'::numeric))))",
+                      "Rows Removed by Filter": 19567236,
+                      "Workers": []
+                    },
+                    {
+                      "Node Type": "Hash",
+                      "Parent Relationship": "Inner",
+                      "Parallel Aware": true,
+                      "Async Capable": false,
+                      "Startup Cost": 76405.71,
+                      "Total Cost": 76405.71,
+                      "Plan Rows": 2041,
+                      "Plan Width": 30,
+                      "Actual Startup Time": 713.525,
+                      "Actual Total Time": 713.526,
+                      "Actual Rows": 1585,
+                      "Actual Loops": 3,
+                      "Hash Buckets": 8192,
+                      "Original Hash Buckets": 8192,
+                      "Hash Batches": 1,
+                      "Original Hash Batches": 1,
+                      "Peak Memory Usage": 416,
+                      "Workers": [],
+                      "Plans": [
+                        {
+                          "Node Type": "Seq Scan",
+                          "Parent Relationship": "Outer",
+                          "Parallel Aware": true,
+                          "Async Capable": false,
+                          "Relation Name": "part",
+                          "Alias": "part",
+                          "Startup Cost": 0.0,
+                          "Total Cost": 76405.71,
+                          "Plan Rows": 2041,
+                          "Plan Width": 30,
+                          "Actual Startup Time": 1.297,
+                          "Actual Total Time": 711.734,
+                          "Actual Rows": 1585,
+                          "Actual Loops": 3,
+                          "Filter": "((p_size >= 1) AND (((p_brand = 'Brand#12'::bpchar) AND (p_container = ANY ('{\"SM CASE\",\"SM BOX\",\"SM PACK\",\"SM PKG\"}'::bpchar[])) AND (p_size <= 5)) OR ((p_brand = 'Brand#23'::bpchar) AND (p_container = ANY ('{\"MED BAG\",\"MED BOX\",\"MED PKG\",\"MED PACK\"}'::bpchar[])) AND (p_size <= 10)) OR ((p_brand = 'Brand#34'::bpchar) AND (p_container = ANY ('{\"LG CASE\",\"LG BOX\",\"LG PACK\",\"LG PKG\"}'::bpchar[])) AND (p_size <= 15))))",
+                          "Rows Removed by Filter": 665082,
+                          "Workers": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Planning Time": 0.321,
+    "Triggers": [],
+    "Execution Time": 12982.454
+  }
+]

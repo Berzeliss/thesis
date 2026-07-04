@@ -1,0 +1,142 @@
+[
+  {
+    "Plan": {
+      "Node Type": "Aggregate",
+      "Strategy": "Sorted",
+      "Partial Mode": "Finalize",
+      "Parallel Aware": false,
+      "Async Capable": false,
+      "Startup Cost": 2292044.43,
+      "Total Cost": 2292046.38,
+      "Plan Rows": 6,
+      "Plan Width": 236,
+      "Actual Startup Time": 46030.635,
+      "Actual Total Time": 46042.481,
+      "Actual Rows": 4,
+      "Actual Loops": 1,
+      "Group Key": [
+        "l_returnflag",
+        "l_linestatus"
+      ],
+      "Plans": [
+        {
+          "Node Type": "Gather Merge",
+          "Parent Relationship": "Outer",
+          "Parallel Aware": false,
+          "Async Capable": false,
+          "Startup Cost": 2292044.43,
+          "Total Cost": 2292045.83,
+          "Plan Rows": 12,
+          "Plan Width": 236,
+          "Actual Startup Time": 46030.604,
+          "Actual Total Time": 46042.428,
+          "Actual Rows": 12,
+          "Actual Loops": 1,
+          "Workers Planned": 2,
+          "Workers Launched": 2,
+          "Plans": [
+            {
+              "Node Type": "Sort",
+              "Parent Relationship": "Outer",
+              "Parallel Aware": false,
+              "Async Capable": false,
+              "Startup Cost": 2291044.41,
+              "Total Cost": 2291044.42,
+              "Plan Rows": 6,
+              "Plan Width": 236,
+              "Actual Startup Time": 45986.516,
+              "Actual Total Time": 45986.517,
+              "Actual Rows": 4,
+              "Actual Loops": 3,
+              "Sort Key": [
+                "l_returnflag",
+                "l_linestatus"
+              ],
+              "Sort Method": "quicksort",
+              "Sort Space Used": 26,
+              "Sort Space Type": "Memory",
+              "Workers": [
+                {
+                  "Worker Number": 0,
+                  "Sort Method": "quicksort",
+                  "Sort Space Used": 26,
+                  "Sort Space Type": "Memory"
+                },
+                {
+                  "Worker Number": 1,
+                  "Sort Method": "quicksort",
+                  "Sort Space Used": 26,
+                  "Sort Space Type": "Memory"
+                }
+              ],
+              "Plans": [
+                {
+                  "Node Type": "Aggregate",
+                  "Strategy": "Hashed",
+                  "Partial Mode": "Partial",
+                  "Parent Relationship": "Outer",
+                  "Parallel Aware": false,
+                  "Async Capable": false,
+                  "Startup Cost": 2291044.19,
+                  "Total Cost": 2291044.33,
+                  "Plan Rows": 6,
+                  "Plan Width": 236,
+                  "Actual Startup Time": 45986.457,
+                  "Actual Total Time": 45986.466,
+                  "Actual Rows": 4,
+                  "Actual Loops": 3,
+                  "Group Key": [
+                    "l_returnflag",
+                    "l_linestatus"
+                  ],
+                  "Planned Partitions": 0,
+                  "HashAgg Batches": 1,
+                  "Peak Memory Usage": 24,
+                  "Disk Usage": 0,
+                  "Workers": [
+                    {
+                      "Worker Number": 0,
+                      "HashAgg Batches": 1,
+                      "Peak Memory Usage": 24,
+                      "Disk Usage": 0
+                    },
+                    {
+                      "Worker Number": 1,
+                      "HashAgg Batches": 1,
+                      "Peak Memory Usage": 24,
+                      "Disk Usage": 0
+                    }
+                  ],
+                  "Plans": [
+                    {
+                      "Node Type": "Seq Scan",
+                      "Parent Relationship": "Outer",
+                      "Parallel Aware": true,
+                      "Async Capable": false,
+                      "Relation Name": "lineitem",
+                      "Alias": "lineitem",
+                      "Startup Cost": 0.0,
+                      "Total Cost": 1437568.56,
+                      "Plan Rows": 24385018,
+                      "Plan Width": 25,
+                      "Actual Startup Time": 0.791,
+                      "Actual Total Time": 9244.43,
+                      "Actual Rows": 19496613,
+                      "Actual Loops": 3,
+                      "Filter": "(l_shipdate <= '1998-08-03 00:00:00'::timestamp without time zone)",
+                      "Rows Removed by Filter": 498738,
+                      "Workers": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Planning Time": 0.218,
+    "Triggers": [],
+    "Execution Time": 46042.546
+  }
+]

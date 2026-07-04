@@ -1,0 +1,358 @@
+[
+  {
+    "Plan": {
+      "Node Type": "Aggregate",
+      "Strategy": "Sorted",
+      "Partial Mode": "Simple",
+      "Parallel Aware": false,
+      "Async Capable": false,
+      "Startup Cost": 6539107.24,
+      "Total Cost": 6555355.9,
+      "Plan Rows": 541622,
+      "Plan Width": 71,
+      "Actual Startup Time": 88779.0,
+      "Actual Total Time": 88779.216,
+      "Actual Rows": 0,
+      "Actual Loops": 1,
+      "Group Key": [
+        "orders.o_totalprice",
+        "orders.o_orderdate",
+        "customer.c_name",
+        "customer.c_custkey",
+        "orders.o_orderkey"
+      ],
+      "Plans": [
+        {
+          "Node Type": "Sort",
+          "Parent Relationship": "Outer",
+          "Parallel Aware": false,
+          "Async Capable": false,
+          "Startup Cost": 6539107.24,
+          "Total Cost": 6540461.29,
+          "Plan Rows": 541622,
+          "Plan Width": 44,
+          "Actual Startup Time": 88778.998,
+          "Actual Total Time": 88779.213,
+          "Actual Rows": 0,
+          "Actual Loops": 1,
+          "Sort Key": [
+            "orders.o_totalprice DESC",
+            "orders.o_orderdate",
+            "customer.c_name",
+            "customer.c_custkey",
+            "orders.o_orderkey"
+          ],
+          "Sort Method": "quicksort",
+          "Sort Space Used": 25,
+          "Sort Space Type": "Memory",
+          "Plans": [
+            {
+              "Node Type": "Hash Join",
+              "Parent Relationship": "Outer",
+              "Parallel Aware": false,
+              "Async Capable": false,
+              "Join Type": "Inner",
+              "Startup Cost": 3928512.5,
+              "Total Cost": 6470862.56,
+              "Plan Rows": 541622,
+              "Plan Width": 44,
+              "Actual Startup Time": 88778.977,
+              "Actual Total Time": 88779.192,
+              "Actual Rows": 0,
+              "Actual Loops": 1,
+              "Inner Unique": false,
+              "Hash Cond": "(lineitem.l_orderkey = orders.o_orderkey)",
+              "Plans": [
+                {
+                  "Node Type": "Seq Scan",
+                  "Parent Relationship": "Outer",
+                  "Parallel Aware": false,
+                  "Async Capable": false,
+                  "Relation Name": "lineitem",
+                  "Alias": "lineitem",
+                  "Startup Cost": 0.0,
+                  "Total Cost": 1724999.16,
+                  "Plan Rows": 59985516,
+                  "Plan Width": 9,
+                  "Actual Startup Time": 0.083,
+                  "Actual Total Time": 0.084,
+                  "Actual Rows": 1,
+                  "Actual Loops": 1
+                },
+                {
+                  "Node Type": "Hash",
+                  "Parent Relationship": "Inner",
+                  "Parallel Aware": false,
+                  "Async Capable": false,
+                  "Startup Cost": 3925628.69,
+                  "Total Cost": 3925628.69,
+                  "Plan Rows": 135425,
+                  "Plan Width": 43,
+                  "Actual Startup Time": 88778.609,
+                  "Actual Total Time": 88778.823,
+                  "Actual Rows": 0,
+                  "Actual Loops": 1,
+                  "Hash Buckets": 131072,
+                  "Original Hash Buckets": 131072,
+                  "Hash Batches": 2,
+                  "Original Hash Batches": 2,
+                  "Peak Memory Usage": 1024,
+                  "Plans": [
+                    {
+                      "Node Type": "Hash Join",
+                      "Parent Relationship": "Outer",
+                      "Parallel Aware": false,
+                      "Async Capable": false,
+                      "Join Type": "Inner",
+                      "Startup Cost": 3462590.77,
+                      "Total Cost": 3925628.69,
+                      "Plan Rows": 135425,
+                      "Plan Width": 43,
+                      "Actual Startup Time": 88778.607,
+                      "Actual Total Time": 88778.82,
+                      "Actual Rows": 0,
+                      "Actual Loops": 1,
+                      "Inner Unique": false,
+                      "Hash Cond": "(orders.o_custkey = customer.c_custkey)",
+                      "Plans": [
+                        {
+                          "Node Type": "Hash Join",
+                          "Parent Relationship": "Outer",
+                          "Parallel Aware": false,
+                          "Async Capable": false,
+                          "Join Type": "Inner",
+                          "Startup Cost": 3384066.14,
+                          "Total Cost": 3834694.68,
+                          "Plan Rows": 135425,
+                          "Plan Width": 24,
+                          "Actual Startup Time": 87259.801,
+                          "Actual Total Time": 87260.013,
+                          "Actual Rows": 0,
+                          "Actual Loops": 1,
+                          "Inner Unique": true,
+                          "Hash Cond": "(orders.o_orderkey = lineitem_1.l_orderkey)",
+                          "Plans": [
+                            {
+                              "Node Type": "Seq Scan",
+                              "Parent Relationship": "Outer",
+                              "Parallel Aware": false,
+                              "Async Capable": false,
+                              "Relation Name": "orders",
+                              "Alias": "orders",
+                              "Startup Cost": 0.0,
+                              "Total Cost": 411257.37,
+                              "Plan Rows": 14998537,
+                              "Plan Width": 20,
+                              "Actual Startup Time": 0.024,
+                              "Actual Total Time": 0.024,
+                              "Actual Rows": 1,
+                              "Actual Loops": 1
+                            },
+                            {
+                              "Node Type": "Hash",
+                              "Parent Relationship": "Inner",
+                              "Parallel Aware": false,
+                              "Async Capable": false,
+                              "Startup Cost": 3382373.33,
+                              "Total Cost": 3382373.33,
+                              "Plan Rows": 135425,
+                              "Plan Width": 4,
+                              "Actual Startup Time": 87259.333,
+                              "Actual Total Time": 87259.499,
+                              "Actual Rows": 0,
+                              "Actual Loops": 1,
+                              "Hash Buckets": 262144,
+                              "Original Hash Buckets": 262144,
+                              "Hash Batches": 1,
+                              "Original Hash Batches": 1,
+                              "Peak Memory Usage": 2048,
+                              "Plans": [
+                                {
+                                  "Node Type": "Aggregate",
+                                  "Strategy": "Sorted",
+                                  "Partial Mode": "Finalize",
+                                  "Parent Relationship": "Outer",
+                                  "Parallel Aware": false,
+                                  "Async Capable": false,
+                                  "Startup Cost": 3275380.96,
+                                  "Total Cost": 3382373.33,
+                                  "Plan Rows": 135425,
+                                  "Plan Width": 4,
+                                  "Actual Startup Time": 87259.332,
+                                  "Actual Total Time": 87259.496,
+                                  "Actual Rows": 0,
+                                  "Actual Loops": 1,
+                                  "Group Key": [
+                                    "lineitem_1.l_orderkey"
+                                  ],
+                                  "Filter": "(sum(lineitem_1.l_quantity) > '500'::numeric)",
+                                  "Rows Removed by Filter": 15000000,
+                                  "Plans": [
+                                    {
+                                      "Node Type": "Gather Merge",
+                                      "Parent Relationship": "Outer",
+                                      "Parallel Aware": false,
+                                      "Async Capable": false,
+                                      "Startup Cost": 3275380.96,
+                                      "Total Cost": 3370185.08,
+                                      "Plan Rows": 812550,
+                                      "Plan Width": 36,
+                                      "Actual Startup Time": 68388.134,
+                                      "Actual Total Time": 76968.564,
+                                      "Actual Rows": 15001569,
+                                      "Actual Loops": 1,
+                                      "Workers Planned": 2,
+                                      "Workers Launched": 2,
+                                      "Plans": [
+                                        {
+                                          "Node Type": "Sort",
+                                          "Parent Relationship": "Outer",
+                                          "Parallel Aware": false,
+                                          "Async Capable": false,
+                                          "Startup Cost": 3274380.94,
+                                          "Total Cost": 3275396.62,
+                                          "Plan Rows": 406275,
+                                          "Plan Width": 36,
+                                          "Actual Startup Time": 67587.735,
+                                          "Actual Total Time": 70368.544,
+                                          "Actual Rows": 5000523,
+                                          "Actual Loops": 3,
+                                          "Sort Key": [
+                                            "lineitem_1.l_orderkey"
+                                          ],
+                                          "Sort Method": "external merge",
+                                          "Sort Space Used": 371472,
+                                          "Sort Space Type": "Disk",
+                                          "Workers": [
+                                            {
+                                              "Worker Number": 0,
+                                              "Sort Method": "external merge",
+                                              "Sort Space Used": 374216,
+                                              "Sort Space Type": "Disk"
+                                            },
+                                            {
+                                              "Worker Number": 1,
+                                              "Sort Method": "external merge",
+                                              "Sort Space Used": 384768,
+                                              "Sort Space Type": "Disk"
+                                            }
+                                          ],
+                                          "Plans": [
+                                            {
+                                              "Node Type": "Aggregate",
+                                              "Strategy": "Hashed",
+                                              "Partial Mode": "Partial",
+                                              "Parent Relationship": "Outer",
+                                              "Parallel Aware": false,
+                                              "Async Capable": false,
+                                              "Startup Cost": 2976259.53,
+                                              "Total Cost": 3225419.66,
+                                              "Plan Rows": 406275,
+                                              "Plan Width": 36,
+                                              "Actual Startup Time": 23480.52,
+                                              "Actual Total Time": 49693.598,
+                                              "Actual Rows": 5000523,
+                                              "Actual Loops": 3,
+                                              "Group Key": [
+                                                "lineitem_1.l_orderkey"
+                                              ],
+                                              "Planned Partitions": 16,
+                                              "HashAgg Batches": 545,
+                                              "Peak Memory Usage": 8345,
+                                              "Disk Usage": 739136,
+                                              "Workers": [
+                                                {
+                                                  "Worker Number": 0,
+                                                  "HashAgg Batches": 561,
+                                                  "Peak Memory Usage": 8337,
+                                                  "Disk Usage": 744128
+                                                },
+                                                {
+                                                  "Worker Number": 1,
+                                                  "HashAgg Batches": 513,
+                                                  "Peak Memory Usage": 8345,
+                                                  "Disk Usage": 764808
+                                                }
+                                              ],
+                                              "Plans": [
+                                                {
+                                                  "Node Type": "Seq Scan",
+                                                  "Parent Relationship": "Outer",
+                                                  "Parallel Aware": true,
+                                                  "Async Capable": false,
+                                                  "Relation Name": "lineitem",
+                                                  "Alias": "lineitem_1",
+                                                  "Startup Cost": 0.0,
+                                                  "Total Cost": 1375083.65,
+                                                  "Plan Rows": 24993965,
+                                                  "Plan Width": 9,
+                                                  "Actual Startup Time": 0.904,
+                                                  "Actual Total Time": 9996.208,
+                                                  "Actual Rows": 19995351,
+                                                  "Actual Loops": 3,
+                                                  "Workers": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "Node Type": "Hash",
+                          "Parent Relationship": "Inner",
+                          "Parallel Aware": false,
+                          "Async Capable": false,
+                          "Startup Cost": 50984.28,
+                          "Total Cost": 50984.28,
+                          "Plan Rows": 1500028,
+                          "Plan Width": 23,
+                          "Actual Startup Time": 1332.367,
+                          "Actual Total Time": 1332.368,
+                          "Actual Rows": 1500000,
+                          "Actual Loops": 1,
+                          "Hash Buckets": 131072,
+                          "Original Hash Buckets": 131072,
+                          "Hash Batches": 16,
+                          "Original Hash Batches": 16,
+                          "Peak Memory Usage": 6161,
+                          "Plans": [
+                            {
+                              "Node Type": "Seq Scan",
+                              "Parent Relationship": "Outer",
+                              "Parallel Aware": false,
+                              "Async Capable": false,
+                              "Relation Name": "customer",
+                              "Alias": "customer",
+                              "Startup Cost": 0.0,
+                              "Total Cost": 50984.28,
+                              "Plan Rows": 1500028,
+                              "Plan Width": 23,
+                              "Actual Startup Time": 0.538,
+                              "Actual Total Time": 948.493,
+                              "Actual Rows": 1500000,
+                              "Actual Loops": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Planning Time": 0.345,
+    "Triggers": [],
+    "Execution Time": 88847.377
+  }
+]

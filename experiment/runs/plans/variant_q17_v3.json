@@ -1,0 +1,157 @@
+[
+  {
+    "Plan": {
+      "Node Type": "Aggregate",
+      "Strategy": "Plain",
+      "Partial Mode": "Simple",
+      "Parallel Aware": false,
+      "Async Capable": false,
+      "Startup Cost": 58253327.67,
+      "Total Cost": 58253327.68,
+      "Plan Rows": 1,
+      "Plan Width": 32,
+      "Actual Startup Time": 288.859,
+      "Actual Total Time": 296.013,
+      "Actual Rows": 1,
+      "Actual Loops": 1,
+      "Plans": [
+        {
+          "Node Type": "Hash Join",
+          "Parent Relationship": "Outer",
+          "Parallel Aware": false,
+          "Async Capable": false,
+          "Join Type": "Inner",
+          "Startup Cost": 54491.07,
+          "Total Cost": 58253327.64,
+          "Plan Rows": 10,
+          "Plan Width": 8,
+          "Actual Startup Time": 288.854,
+          "Actual Total Time": 296.007,
+          "Actual Rows": 0,
+          "Actual Loops": 1,
+          "Inner Unique": false,
+          "Hash Cond": "(lineitem.l_partkey = part.p_partkey)",
+          "Join Filter": "(lineitem.l_quantity < (SubPlan 1))",
+          "Rows Removed by Join Filter": 0,
+          "Plans": [
+            {
+              "Node Type": "Seq Scan",
+              "Parent Relationship": "Outer",
+              "Parallel Aware": false,
+              "Async Capable": false,
+              "Relation Name": "lineitem",
+              "Alias": "lineitem",
+              "Startup Cost": 0.0,
+              "Total Cost": 1724999.16,
+              "Plan Rows": 59985516,
+              "Plan Width": 17,
+              "Actual Startup Time": 0.283,
+              "Actual Total Time": 0.283,
+              "Actual Rows": 1,
+              "Actual Loops": 1
+            },
+            {
+              "Node Type": "Hash",
+              "Parent Relationship": "Inner",
+              "Parallel Aware": false,
+              "Async Capable": false,
+              "Startup Cost": 54491.06,
+              "Total Cost": 54491.06,
+              "Plan Rows": 1,
+              "Plan Width": 4,
+              "Actual Startup Time": 288.56,
+              "Actual Total Time": 295.711,
+              "Actual Rows": 0,
+              "Actual Loops": 1,
+              "Hash Buckets": 1024,
+              "Original Hash Buckets": 1024,
+              "Hash Batches": 1,
+              "Original Hash Batches": 1,
+              "Peak Memory Usage": 8,
+              "Plans": [
+                {
+                  "Node Type": "Gather",
+                  "Parent Relationship": "Outer",
+                  "Parallel Aware": false,
+                  "Async Capable": false,
+                  "Startup Cost": 1000.0,
+                  "Total Cost": 54491.06,
+                  "Plan Rows": 1,
+                  "Plan Width": 4,
+                  "Actual Startup Time": 288.558,
+                  "Actual Total Time": 295.708,
+                  "Actual Rows": 0,
+                  "Actual Loops": 1,
+                  "Workers Planned": 2,
+                  "Workers Launched": 2,
+                  "Single Copy": false,
+                  "Plans": [
+                    {
+                      "Node Type": "Seq Scan",
+                      "Parent Relationship": "Outer",
+                      "Parallel Aware": true,
+                      "Async Capable": false,
+                      "Relation Name": "part",
+                      "Alias": "part",
+                      "Startup Cost": 0.0,
+                      "Total Cost": 53490.96,
+                      "Plan Rows": 1,
+                      "Plan Width": 4,
+                      "Actual Startup Time": 245.116,
+                      "Actual Total Time": 245.116,
+                      "Actual Rows": 0,
+                      "Actual Loops": 3,
+                      "Filter": "((p_brand = 'Brand#5'::bpchar) AND (p_container = 'MED BOX'::bpchar))",
+                      "Rows Removed by Filter": 666667,
+                      "Workers": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Node Type": "Aggregate",
+              "Strategy": "Plain",
+              "Partial Mode": "Simple",
+              "Parent Relationship": "SubPlan",
+              "Subplan Name": "SubPlan 1",
+              "Parallel Aware": false,
+              "Async Capable": false,
+              "Startup Cost": 1874963.03,
+              "Total Cost": 1874963.05,
+              "Plan Rows": 1,
+              "Plan Width": 32,
+              "Actual Startup Time": 0.0,
+              "Actual Total Time": 0.0,
+              "Actual Rows": 0,
+              "Actual Loops": 0,
+              "Plans": [
+                {
+                  "Node Type": "Seq Scan",
+                  "Parent Relationship": "Outer",
+                  "Parallel Aware": false,
+                  "Async Capable": false,
+                  "Relation Name": "lineitem",
+                  "Alias": "lineitem_1",
+                  "Startup Cost": 0.0,
+                  "Total Cost": 1874962.95,
+                  "Plan Rows": 32,
+                  "Plan Width": 5,
+                  "Actual Startup Time": 0.0,
+                  "Actual Total Time": 0.0,
+                  "Actual Rows": 0,
+                  "Actual Loops": 0,
+                  "Filter": "(l_partkey = part.p_partkey)",
+                  "Rows Removed by Filter": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Planning Time": 0.192,
+    "Triggers": [],
+    "Execution Time": 296.096
+  }
+]

@@ -1,0 +1,1390 @@
+[2026-06-27 19:06:37.666926] ✖ Failed on localhost: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2026-06-27 19:06:37.671183] ✖ Failed on 127.0.0.1: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2026-06-27 19:06:38.201495] ✔ Connected via 172.28.64.1
+[2026-06-27 19:06:38.610688] 
+=== Starting experiments ===
+
+[2026-06-27 19:06:38.617209] 
+ START QUERY: base_q1.sql
+[2026-06-27 19:06:38.626281]   ▶ run 1 started
+[2026-06-27 19:07:20.021738]   ✔ run 1 finished in 41.3883s
+[2026-06-27 19:07:20.028933]   ▶ run 2 started
+[2026-06-27 19:07:58.588591]   ✔ run 2 finished in 38.5528s
+[2026-06-27 19:08:02.769136]   ▶ run 3 started
+[2026-06-27 19:08:41.658940]   ✔ run 3 finished in 38.8823s
+[2026-06-27 19:08:41.666586]  generating plan for base_q1.sql
+[2026-06-27 19:09:20.817930]   ✔ plan saved: experiment/runs/plans/base_q1.json
+[2026-06-27 19:09:20.824624] 🏁 END QUERY: base_q1.sql | started 2026-06-27 19:06:38.618359 | ended 2026-06-27 19:09:20.819705
+
+[2026-06-27 19:09:20.830194] 
+ START QUERY: base_q10.sql
+[2026-06-27 19:09:20.837659]   ▶ run 1 started
+[2026-06-27 19:09:58.613633]   ✔ run 1 finished in 37.7639s
+[2026-06-27 19:09:58.625932]   ▶ run 2 started
+[2026-06-27 19:10:28.034555]   ✔ run 2 finished in 29.4006s
+[2026-06-27 19:10:28.042516]   ▶ run 3 started
+[2026-06-27 19:11:09.910795]   ✔ run 3 finished in 41.8559s
+[2026-06-27 19:11:09.924998]  generating plan for base_q10.sql
+[2026-06-27 19:11:37.215005]   ✔ plan saved: experiment/runs/plans/base_q10.json
+[2026-06-27 19:11:37.222384] 🏁 END QUERY: base_q10.sql | started 2026-06-27 19:09:20.831315 | ended 2026-06-27 19:11:37.216391
+
+[2026-06-27 19:11:37.228290] 
+ START QUERY: base_q11.sql
+[2026-06-27 19:11:37.234738]   ▶ run 1 started
+[2026-06-27 19:11:43.258902]   ✔ run 1 finished in 6.0180s
+[2026-06-27 19:11:43.266383]   ▶ run 2 started
+[2026-06-27 19:11:48.178239]   ✔ run 2 finished in 4.9040s
+[2026-06-27 19:11:48.185087]   ▶ run 3 started
+[2026-06-27 19:11:53.515329]   ✔ run 3 finished in 5.3218s
+[2026-06-27 19:11:53.522562]  generating plan for base_q11.sql
+[2026-06-27 19:11:59.311011]   ✔ plan saved: experiment/runs/plans/base_q11.json
+[2026-06-27 19:11:59.318644] 🏁 END QUERY: base_q11.sql | started 2026-06-27 19:11:37.229504 | ended 2026-06-27 19:11:59.312392
+
+[2026-06-27 19:11:59.325588] 
+ START QUERY: base_q12.sql
+[2026-06-27 19:11:59.333067]   ▶ run 1 started
+[2026-06-27 19:12:23.071377]   ✔ run 1 finished in 23.7298s
+[2026-06-27 19:12:23.078883]   ▶ run 2 started
+[2026-06-27 19:12:48.195918]   ✔ run 2 finished in 25.1101s
+[2026-06-27 19:12:48.203512]   ▶ run 3 started
+[2026-06-27 19:13:14.219810]   ✔ run 3 finished in 26.0100s
+[2026-06-27 19:13:14.227463]  generating plan for base_q12.sql
+[2026-06-27 19:13:53.655243]   ✔ plan saved: experiment/runs/plans/base_q12.json
+[2026-06-27 19:13:53.665971] 🏁 END QUERY: base_q12.sql | started 2026-06-27 19:11:59.326725 | ended 2026-06-27 19:13:53.658279
+
+[2026-06-27 19:13:53.674181] 
+ START QUERY: base_q13.sql
+[2026-06-27 19:13:53.682043]   ▶ run 1 started
+[2026-06-27 19:14:23.097372]   ✔ run 1 finished in 29.4069s
+[2026-06-27 19:14:23.105589]   ▶ run 2 started
+[2026-06-27 19:14:38.198506]   ✔ run 2 finished in 15.0843s
+[2026-06-27 19:14:38.208286]   ▶ run 3 started
+[2026-06-27 19:14:54.716701]   ✔ run 3 finished in 16.4994s
+[2026-06-27 19:14:54.724804]  generating plan for base_q13.sql
+[2026-06-27 19:15:11.050487]   ✔ plan saved: experiment/runs/plans/base_q13.json
+[2026-06-27 19:15:11.058236] 🏁 END QUERY: base_q13.sql | started 2026-06-27 19:13:53.675589 | ended 2026-06-27 19:15:11.051891
+
+[2026-06-27 19:15:11.064556] 
+ START QUERY: base_q14.sql
+[2026-06-27 19:15:11.072650]   ▶ run 1 started
+[2026-06-27 19:15:27.689153]   ✔ run 1 finished in 16.6086s
+[2026-06-27 19:15:27.697229]   ▶ run 2 started
+[2026-06-27 19:15:42.176534]   ✔ run 2 finished in 14.4734s
+[2026-06-27 19:15:42.184963]   ▶ run 3 started
+[2026-06-27 19:15:58.793004]   ✔ run 3 finished in 16.6003s
+[2026-06-27 19:15:58.802552]  generating plan for base_q14.sql
+[2026-06-27 19:16:13.373989]   ✔ plan saved: experiment/runs/plans/base_q14.json
+[2026-06-27 19:16:13.381740] 🏁 END QUERY: base_q14.sql | started 2026-06-27 19:15:11.065703 | ended 2026-06-27 19:16:13.375516
+
+[2026-06-27 19:16:13.387536] 
+ START QUERY: base_q15.sql
+[2026-06-27 19:16:13.394298]   ▶ run 1 started
+[2026-06-27 19:16:28.084601]   ✔ run 1 finished in 14.6819s
+[2026-06-27 19:16:28.094204]   ▶ run 2 started
+[2026-06-27 19:16:41.195669]   ✔ run 2 finished in 13.0942s
+[2026-06-27 19:16:41.204090]   ▶ run 3 started
+[2026-06-27 19:16:55.637485]   ✔ run 3 finished in 14.4259s
+[2026-06-27 19:16:55.645727]  generating plan for base_q15.sql
+[2026-06-27 19:17:08.509846]   ✔ plan saved: experiment/runs/plans/base_q15.json
+[2026-06-27 19:17:08.518026] 🏁 END QUERY: base_q15.sql | started 2026-06-27 19:16:13.388761 | ended 2026-06-27 19:17:08.511412
+
+[2026-06-27 19:17:08.524185] 
+ START QUERY: base_q16.sql
+[2026-06-27 19:17:08.532364]   ▶ run 1 started
+[2026-06-27 19:17:16.667025]   ✔ run 1 finished in 8.1275s
+[2026-06-27 19:17:16.675127]   ▶ run 2 started
+[2026-06-27 19:17:27.671699]   ✔ run 2 finished in 10.9903s
+[2026-06-27 19:17:27.680532]   ▶ run 3 started
+[2026-06-27 19:17:39.226557]   ✔ run 3 finished in 11.5382s
+[2026-06-27 19:17:39.236291]  generating plan for base_q16.sql
+[2026-06-27 19:17:49.336978]   ✔ plan saved: experiment/runs/plans/base_q16.json
+[2026-06-27 19:17:49.347527] 🏁 END QUERY: base_q16.sql | started 2026-06-27 19:17:08.525410 | ended 2026-06-27 19:17:49.338834
+
+[2026-06-27 19:17:49.356161] 
+ START QUERY: base_q17.sql
+[2026-06-27 19:17:49.365778]   ▶ run 1 started
+[2026-06-27 19:37:50.113446]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-27 19:37:50.128505]   ▶ run 2 started
+[2026-06-27 19:57:49.846684]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-27 19:57:49.854481]   ▶ run 3 started
+[2026-06-27 20:17:49.834424]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-27 20:17:49.847221]  generating plan for base_q17.sql
+[2026-06-27 20:37:49.585215]   ✔ plan saved: experiment/runs/plans/base_q17.json
+[2026-06-27 20:37:49.593712] 🏁 END QUERY: base_q17.sql | started 2026-06-27 19:17:49.357772 | ended 2026-06-27 20:37:49.586863
+
+[2026-06-27 20:37:49.603065] 
+ START QUERY: base_q18.sql
+[2026-06-27 20:37:49.611043]   ▶ run 1 started
+[2026-06-27 20:40:51.662737]   ✔ run 1 finished in 182.0418s
+[2026-06-27 20:40:51.673933]   ▶ run 2 started
+[2026-06-27 20:43:32.761879]   ✔ run 2 finished in 161.0806s
+[2026-06-27 20:43:32.772152]   ▶ run 3 started
+[2026-06-27 20:45:44.607367]   ✔ run 3 finished in 131.8271s
+[2026-06-27 20:45:44.617234]  generating plan for base_q18.sql
+[2026-06-27 20:48:06.047577]   ✔ plan saved: experiment/runs/plans/base_q18.json
+[2026-06-27 20:48:06.057367] 🏁 END QUERY: base_q18.sql | started 2026-06-27 20:37:49.604503 | ended 2026-06-27 20:48:06.049679
+
+[2026-06-27 20:48:06.067639] 
+ START QUERY: base_q19.sql
+[2026-06-27 20:48:06.075560]   ▶ run 1 started
+[2026-06-27 20:48:19.839641]   ✔ run 1 finished in 13.7570s
+[2026-06-27 20:48:19.850278]   ▶ run 2 started
+[2026-06-27 20:48:32.902339]   ✔ run 2 finished in 13.0438s
+[2026-06-27 20:48:32.909894]   ▶ run 3 started
+[2026-06-27 20:48:46.662097]   ✔ run 3 finished in 13.7447s
+[2026-06-27 20:48:46.672068]  generating plan for base_q19.sql
+[2026-06-27 20:48:59.224553]   ✔ plan saved: experiment/runs/plans/base_q19.json
+[2026-06-27 20:48:59.231953] 🏁 END QUERY: base_q19.sql | started 2026-06-27 20:48:06.069070 | ended 2026-06-27 20:48:59.225871
+
+[2026-06-27 20:48:59.238961] 
+ START QUERY: base_q2.sql
+[2026-06-27 20:48:59.247465]   ▶ run 1 started
+[2026-06-27 21:09:00.071346]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-27 21:09:00.090890]   ▶ run 2 started
+[2026-06-27 21:29:00.878237]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-27 21:29:00.887289]   ▶ run 3 started
+[2026-06-27 21:49:01.672568]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-27 21:49:01.681145]  generating plan for base_q2.sql
+[2026-06-27 22:09:00.378619]   ✔ plan saved: experiment/runs/plans/base_q2.json
+[2026-06-27 22:09:00.386874] 🏁 END QUERY: base_q2.sql | started 2026-06-27 20:48:59.241076 | ended 2026-06-27 22:09:00.380174
+
+[2026-06-27 22:09:00.393618] 
+ START QUERY: base_q20.sql
+[2026-06-27 22:09:00.402524]   ▶ run 1 started
+[2026-06-27 22:29:02.950800]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-27 22:29:02.959869]   ▶ run 2 started
+[2026-06-27 22:49:03.423118]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-27 22:49:03.433563]   ▶ run 3 started
+[2026-06-27 23:09:03.210049]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-27 23:09:03.220680]  generating plan for base_q20.sql
+[2026-06-27 23:29:03.078741]   ✔ plan saved: experiment/runs/plans/base_q20.json
+[2026-06-27 23:29:03.086052] 🏁 END QUERY: base_q20.sql | started 2026-06-27 22:09:00.395311 | ended 2026-06-27 23:29:03.080739
+
+[2026-06-27 23:29:03.093158] 
+ START QUERY: base_q21.sql
+[2026-06-27 23:29:03.102639]   ▶ run 1 started
+[2026-06-27 23:49:04.576279]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-27 23:49:04.601847]   ▶ run 2 started
+[2026-06-28 00:09:06.147568]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-28 00:09:06.166338]   ▶ run 3 started
+[2026-06-28 00:29:07.778171]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-28 00:29:07.796730]  generating plan for base_q21.sql
+[2026-06-28 00:49:09.133759]   ✔ plan saved: experiment/runs/plans/base_q21.json
+[2026-06-28 00:49:09.142427] 🏁 END QUERY: base_q21.sql | started 2026-06-27 23:29:03.095551 | ended 2026-06-28 00:49:09.136015
+
+[2026-06-28 00:49:09.167662] 
+ START QUERY: base_q22.sql
+[2026-06-28 00:49:09.225139]   ▶ run 1 started
+[2026-06-28 00:49:17.455490]   ✔ run 1 finished in 8.2170s
+[2026-06-28 00:49:17.466642]   ▶ run 2 started
+[2026-06-28 00:49:23.779962]   ✔ run 2 finished in 6.3049s
+[2026-06-28 00:49:23.790310]   ▶ run 3 started
+[2026-06-28 00:49:29.985202]   ✔ run 3 finished in 6.1864s
+[2026-06-28 00:49:29.995856]  generating plan for base_q22.sql
+[2026-06-28 00:49:36.322603]   ✔ plan saved: experiment/runs/plans/base_q22.json
+[2026-06-28 00:49:36.330304] 🏁 END QUERY: base_q22.sql | started 2026-06-28 00:49:09.169650 | ended 2026-06-28 00:49:36.323946
+
+[2026-06-28 00:49:36.337636] 
+ START QUERY: base_q3.sql
+[2026-06-28 00:49:36.346377]   ▶ run 1 started
+[2026-06-28 00:50:05.593671]   ✔ run 1 finished in 29.2348s
+[2026-06-28 00:50:05.603908]   ▶ run 2 started
+[2026-06-28 00:50:31.719647]   ✔ run 2 finished in 26.1068s
+[2026-06-28 00:50:31.728231]   ▶ run 3 started
+[2026-06-28 00:50:57.735808]   ✔ run 3 finished in 25.9968s
+[2026-06-28 00:50:57.745443]  generating plan for base_q3.sql
+[2026-06-28 00:51:23.510386]   ✔ plan saved: experiment/runs/plans/base_q3.json
+[2026-06-28 00:51:23.519946] 🏁 END QUERY: base_q3.sql | started 2026-06-28 00:49:36.338785 | ended 2026-06-28 00:51:23.512558
+
+[2026-06-28 00:51:23.527938] 
+ START QUERY: base_q4.sql
+[2026-06-28 00:51:23.536310]   ▶ run 1 started
+[2026-06-28 00:51:55.478655]   ✔ run 1 finished in 31.9338s
+[2026-06-28 00:51:55.488328]   ▶ run 2 started
+[2026-06-28 00:52:27.371457]   ✔ run 2 finished in 31.8745s
+[2026-06-28 00:52:27.379562]   ▶ run 3 started
+[2026-06-28 00:52:59.949886]   ✔ run 3 finished in 32.5624s
+[2026-06-28 00:52:59.959157]  generating plan for base_q4.sql
+[2026-06-28 00:53:32.141429]   ✔ plan saved: experiment/runs/plans/base_q4.json
+[2026-06-28 00:53:32.149519] 🏁 END QUERY: base_q4.sql | started 2026-06-28 00:51:23.529092 | ended 2026-06-28 00:53:32.142880
+
+[2026-06-28 00:53:32.158338] 
+ START QUERY: base_q5.sql
+[2026-06-28 00:53:32.167878]   ▶ run 1 started
+[2026-06-28 00:56:31.023309]   ✔ run 1 finished in 178.8465s
+[2026-06-28 00:56:31.034121]   ▶ run 2 started
+[2026-06-28 01:00:02.656901]   ✔ run 2 finished in 211.6155s
+[2026-06-28 01:00:02.664580]   ▶ run 3 started
+[2026-06-28 01:02:22.604695]   ✔ run 3 finished in 139.9226s
+[2026-06-28 01:02:22.622553]  generating plan for base_q5.sql
+[2026-06-28 01:04:52.853811]   ✔ plan saved: experiment/runs/plans/base_q5.json
+[2026-06-28 01:04:52.865094] 🏁 END QUERY: base_q5.sql | started 2026-06-28 00:53:32.159942 | ended 2026-06-28 01:04:52.856209
+
+[2026-06-28 01:04:52.890391] 
+ START QUERY: base_q6.sql
+[2026-06-28 01:04:52.903506]   ▶ run 1 started
+[2026-06-28 01:05:07.818216]   ✔ run 1 finished in 14.9027s
+[2026-06-28 01:05:07.828444]   ▶ run 2 started
+[2026-06-28 01:05:19.744791]   ✔ run 2 finished in 11.9048s
+[2026-06-28 01:05:19.756192]   ▶ run 3 started
+[2026-06-28 01:05:33.069972]   ✔ run 3 finished in 13.3057s
+[2026-06-28 01:05:33.078669]  generating plan for base_q6.sql
+[2026-06-28 01:05:45.462021]   ✔ plan saved: experiment/runs/plans/base_q6.json
+[2026-06-28 01:05:45.471377] 🏁 END QUERY: base_q6.sql | started 2026-06-28 01:04:52.892277 | ended 2026-06-28 01:05:45.463377
+
+[2026-06-28 01:05:45.479200] 
+ START QUERY: base_q7.sql
+[2026-06-28 01:05:45.489153]   ▶ run 1 started
+[2026-06-28 01:06:06.910097]   ✔ run 1 finished in 21.4119s
+[2026-06-28 01:06:06.918337]   ▶ run 2 started
+[2026-06-28 01:06:26.628660]   ✔ run 2 finished in 19.7034s
+[2026-06-28 01:06:26.636550]   ▶ run 3 started
+[2026-06-28 01:06:47.606201]   ✔ run 3 finished in 20.9607s
+[2026-06-28 01:06:47.618060]  generating plan for base_q7.sql
+[2026-06-28 01:07:08.441891]   ✔ plan saved: experiment/runs/plans/base_q7.json
+[2026-06-28 01:07:08.450911] 🏁 END QUERY: base_q7.sql | started 2026-06-28 01:05:45.480955 | ended 2026-06-28 01:07:08.443600
+
+[2026-06-28 01:07:08.461465] 
+ START QUERY: base_q8.sql
+[2026-06-28 01:07:08.470992]   ▶ run 1 started
+[2026-06-28 01:09:15.494278]   ✔ run 1 finished in 127.0163s
+[2026-06-28 01:09:15.503231]   ▶ run 2 started
+[2026-06-28 01:11:37.045803]   ✔ run 2 finished in 141.5356s
+[2026-06-28 01:11:37.055505]   ▶ run 3 started
+[2026-06-28 01:13:59.048102]   ✔ run 3 finished in 141.9794s
+[2026-06-28 01:13:59.059826]  generating plan for base_q8.sql
+[2026-06-28 01:16:20.321895]   ✔ plan saved: experiment/runs/plans/base_q8.json
+[2026-06-28 01:16:20.332673] 🏁 END QUERY: base_q8.sql | started 2026-06-28 01:07:08.462955 | ended 2026-06-28 01:16:20.323424
+
+[2026-06-28 01:16:20.341230] 
+ START QUERY: base_q9.sql
+[2026-06-28 01:16:20.351767]   ▶ run 1 started
+[2026-06-28 01:16:21.246830]   ✔ run 1 finished in 0.8886s
+[2026-06-28 01:16:21.254927]   ▶ run 2 started
+[2026-06-28 01:16:21.465543]   ✔ run 2 finished in 0.2028s
+[2026-06-28 01:16:21.473792]   ▶ run 3 started
+[2026-06-28 01:16:21.740955]   ✔ run 3 finished in 0.2599s
+[2026-06-28 01:16:21.749000]  generating plan for base_q9.sql
+[2026-06-28 01:16:21.963307]   ✔ plan saved: experiment/runs/plans/base_q9.json
+[2026-06-28 01:16:21.971505] 🏁 END QUERY: base_q9.sql | started 2026-06-28 01:16:20.342701 | ended 2026-06-28 01:16:21.964773
+
+[2026-06-28 01:16:21.980888] 
+ START QUERY: variant_q10_v1.sql
+[2026-06-28 01:16:21.988472]   ▶ run 1 started
+[2026-06-28 01:16:43.158792]   ✔ run 1 finished in 21.1630s
+[2026-06-28 01:16:43.167229]   ▶ run 2 started
+[2026-06-28 01:17:01.775612]   ✔ run 2 finished in 18.5965s
+[2026-06-28 01:17:01.784852]   ▶ run 3 started
+[2026-06-28 01:17:20.463151]   ✔ run 3 finished in 18.6701s
+[2026-06-28 01:17:20.472748]  generating plan for variant_q10_v1.sql
+[2026-06-28 01:17:39.106735]   ✔ plan saved: experiment/runs/plans/variant_q10_v1.json
+[2026-06-28 01:17:39.114464] 🏁 END QUERY: variant_q10_v1.sql | started 2026-06-28 01:16:21.982043 | ended 2026-06-28 01:17:39.107969
+
+[2026-06-28 01:17:39.121589] 
+ START QUERY: variant_q10_v2.sql
+[2026-06-28 01:17:39.129575]   ▶ run 1 started
+[2026-06-28 01:18:22.205029]   ✔ run 1 finished in 43.0644s
+[2026-06-28 01:18:22.214684]   ▶ run 2 started
+[2026-06-28 01:18:55.708061]   ✔ run 2 finished in 33.4851s
+[2026-06-28 01:18:55.716885]   ▶ run 3 started
+[2026-06-28 01:19:29.771750]   ✔ run 3 finished in 34.0474s
+[2026-06-28 01:19:29.780305]  generating plan for variant_q10_v2.sql
+[2026-06-28 01:19:59.754326]   ✔ plan saved: experiment/runs/plans/variant_q10_v2.json
+[2026-06-28 01:19:59.762112] 🏁 END QUERY: variant_q10_v2.sql | started 2026-06-28 01:17:39.122664 | ended 2026-06-28 01:19:59.755868
+
+[2026-06-28 01:19:59.767489] 
+ START QUERY: variant_q10_v3.sql
+[2026-06-28 01:19:59.782818]   ▶ run 1 started
+[2026-06-28 01:20:37.246149]   ✔ run 1 finished in 37.4552s
+[2026-06-28 01:20:37.254903]   ▶ run 2 started
+[2026-06-28 01:21:15.800781]   ✔ run 2 finished in 38.5354s
+[2026-06-28 01:21:15.813063]   ▶ run 3 started
+[2026-06-28 01:21:54.000337]   ✔ run 3 finished in 38.1792s
+[2026-06-28 01:21:54.010853]  generating plan for variant_q10_v3.sql
+[2026-06-28 01:22:28.319632]   ✔ plan saved: experiment/runs/plans/variant_q10_v3.json
+[2026-06-28 01:22:28.327825] 🏁 END QUERY: variant_q10_v3.sql | started 2026-06-28 01:19:59.768575 | ended 2026-06-28 01:22:28.321344
+
+[2026-06-28 01:22:28.333897] 
+ START QUERY: variant_q10_v4.sql
+[2026-06-28 01:22:28.342335]   ▶ run 1 started
+[2026-06-28 01:23:08.784734]   ✔ run 1 finished in 40.4331s
+[2026-06-28 01:23:08.793504]   ▶ run 2 started
+[2026-06-28 01:23:50.216633]   ✔ run 2 finished in 41.4092s
+[2026-06-28 01:23:50.240350]   ▶ run 3 started
+[2026-06-28 01:24:31.370352]   ✔ run 3 finished in 41.1200s
+[2026-06-28 01:24:31.379930]  generating plan for variant_q10_v4.sql
+[2026-06-28 01:25:09.036354]   ✔ plan saved: experiment/runs/plans/variant_q10_v4.json
+[2026-06-28 01:25:09.044698] 🏁 END QUERY: variant_q10_v4.sql | started 2026-06-28 01:22:28.334904 | ended 2026-06-28 01:25:09.037867
+
+[2026-06-28 01:25:09.051956] 
+ START QUERY: variant_q11_v1.sql
+[2026-06-28 01:25:09.059493]   ▶ run 1 started
+[2026-06-28 01:25:12.914747]   ✔ run 1 finished in 3.8475s
+[2026-06-28 01:25:12.923332]   ▶ run 2 started
+[2026-06-28 01:25:15.126378]   ✔ run 2 finished in 2.1951s
+[2026-06-28 01:25:15.134322]   ▶ run 3 started
+[2026-06-28 01:25:17.651631]   ✔ run 3 finished in 2.5100s
+[2026-06-28 01:25:17.660009]  generating plan for variant_q11_v1.sql
+[2026-06-28 01:25:20.579940]   ✔ plan saved: experiment/runs/plans/variant_q11_v1.json
+[2026-06-28 01:25:20.587398] 🏁 END QUERY: variant_q11_v1.sql | started 2026-06-28 01:25:09.053147 | ended 2026-06-28 01:25:20.581183
+
+[2026-06-28 01:25:20.594566] 
+ START QUERY: variant_q11_v2.sql
+[2026-06-28 01:25:20.603435]   ▶ run 1 started
+[2026-06-28 01:25:23.056586]   ✔ run 1 finished in 2.4447s
+[2026-06-28 01:25:23.065307]   ▶ run 2 started
+[2026-06-28 01:25:25.526105]   ✔ run 2 finished in 2.4528s
+[2026-06-28 01:25:25.534045]   ▶ run 3 started
+[2026-06-28 01:25:27.769546]   ✔ run 3 finished in 2.2281s
+[2026-06-28 01:25:27.776925]  generating plan for variant_q11_v2.sql
+[2026-06-28 01:25:30.415885]   ✔ plan saved: experiment/runs/plans/variant_q11_v2.json
+[2026-06-28 01:25:30.424244] 🏁 END QUERY: variant_q11_v2.sql | started 2026-06-28 01:25:20.596196 | ended 2026-06-28 01:25:30.417178
+
+[2026-06-28 01:25:30.431946] 
+ START QUERY: variant_q11_v3.sql
+[2026-06-28 01:25:30.440823]   ▶ run 1 started
+[2026-06-28 01:25:32.627163]   ✔ run 1 finished in 2.1782s
+[2026-06-28 01:25:32.636871]   ▶ run 2 started
+[2026-06-28 01:25:34.783056]   ✔ run 2 finished in 2.1376s
+[2026-06-28 01:25:34.791132]   ▶ run 3 started
+[2026-06-28 01:25:37.044582]   ✔ run 3 finished in 2.2451s
+[2026-06-28 01:25:37.052841]  generating plan for variant_q11_v3.sql
+[2026-06-28 01:25:39.723262]   ✔ plan saved: experiment/runs/plans/variant_q11_v3.json
+[2026-06-28 01:25:39.733946] 🏁 END QUERY: variant_q11_v3.sql | started 2026-06-28 01:25:30.433468 | ended 2026-06-28 01:25:39.725163
+
+[2026-06-28 01:25:39.744170] 
+ START QUERY: variant_q11_v4.sql
+[2026-06-28 01:25:39.753925]   ▶ run 1 started
+[2026-06-28 01:25:42.141735]   ✔ run 1 finished in 2.3797s
+[2026-06-28 01:25:42.149972]   ▶ run 2 started
+[2026-06-28 01:25:44.370255]   ✔ run 2 finished in 2.2113s
+[2026-06-28 01:25:44.379009]   ▶ run 3 started
+[2026-06-28 01:25:46.657332]   ✔ run 3 finished in 2.2706s
+[2026-06-28 01:25:46.665433]  generating plan for variant_q11_v4.sql
+[2026-06-28 01:25:49.390498]   ✔ plan saved: experiment/runs/plans/variant_q11_v4.json
+[2026-06-28 01:25:49.399162] 🏁 END QUERY: variant_q11_v4.sql | started 2026-06-28 01:25:39.745885 | ended 2026-06-28 01:25:49.391841
+
+[2026-06-28 01:25:49.406390] 
+ START QUERY: variant_q12_v1.sql
+[2026-06-28 01:25:49.415266]   ▶ run 1 started
+[2026-06-28 01:26:13.501117]   ✔ run 1 finished in 24.0778s
+[2026-06-28 01:26:13.509533]   ▶ run 2 started
+[2026-06-28 01:26:38.326149]   ✔ run 2 finished in 24.8088s
+[2026-06-28 01:26:38.334628]   ▶ run 3 started
+[2026-06-28 01:27:02.560567]   ✔ run 3 finished in 24.2172s
+[2026-06-28 01:27:02.570283]  generating plan for variant_q12_v1.sql
+[2026-06-28 01:27:28.468166]   ✔ plan saved: experiment/runs/plans/variant_q12_v1.json
+[2026-06-28 01:27:28.475896] 🏁 END QUERY: variant_q12_v1.sql | started 2026-06-28 01:25:49.407818 | ended 2026-06-28 01:27:28.469791
+
+[2026-06-28 01:27:28.485346] 
+ START QUERY: variant_q12_v2.sql
+[2026-06-28 01:27:28.493814]   ▶ run 1 started
+[2026-06-28 01:27:54.132983]   ✔ run 1 finished in 25.6302s
+[2026-06-28 01:27:54.143746]   ▶ run 2 started
+[2026-06-28 01:28:20.909010]   ✔ run 2 finished in 26.7557s
+[2026-06-28 01:28:20.919957]   ▶ run 3 started
+[2026-06-28 01:28:47.296130]   ✔ run 3 finished in 26.3680s
+[2026-06-28 01:28:47.305920]  generating plan for variant_q12_v2.sql
+[2026-06-28 01:29:12.877403]   ✔ plan saved: experiment/runs/plans/variant_q12_v2.json
+[2026-06-28 01:29:12.885147] 🏁 END QUERY: variant_q12_v2.sql | started 2026-06-28 01:27:28.486799 | ended 2026-06-28 01:29:12.878903
+
+[2026-06-28 01:29:12.893729] 
+ START QUERY: variant_q12_v3.sql
+[2026-06-28 01:29:12.901852]   ▶ run 1 started
+[2026-06-28 01:29:38.174975]   ✔ run 1 finished in 25.2632s
+[2026-06-28 01:29:38.183241]   ▶ run 2 started
+[2026-06-28 01:30:03.156638]   ✔ run 2 finished in 24.9659s
+[2026-06-28 01:30:03.165018]   ▶ run 3 started
+[2026-06-28 01:30:27.844594]   ✔ run 3 finished in 24.6721s
+[2026-06-28 01:30:27.853583]  generating plan for variant_q12_v3.sql
+[2026-06-28 01:30:53.329962]   ✔ plan saved: experiment/runs/plans/variant_q12_v3.json
+[2026-06-28 01:30:53.339809] 🏁 END QUERY: variant_q12_v3.sql | started 2026-06-28 01:29:12.894939 | ended 2026-06-28 01:30:53.332030
+
+[2026-06-28 01:30:53.349589] 
+ START QUERY: variant_q12_v4.sql
+[2026-06-28 01:30:53.361811]   ▶ run 1 started
+[2026-06-28 01:31:19.394040]   ✔ run 1 finished in 26.0236s
+[2026-06-28 01:31:19.404088]   ▶ run 2 started
+[2026-06-28 01:31:46.664161]   ✔ run 2 finished in 27.2511s
+[2026-06-28 01:31:46.673948]   ▶ run 3 started
+[2026-06-28 01:32:12.105718]   ✔ run 3 finished in 25.4218s
+[2026-06-28 01:32:12.117754]  generating plan for variant_q12_v4.sql
+[2026-06-28 01:32:38.017423]   ✔ plan saved: experiment/runs/plans/variant_q12_v4.json
+[2026-06-28 01:32:38.028350] 🏁 END QUERY: variant_q12_v4.sql | started 2026-06-28 01:30:53.351610 | ended 2026-06-28 01:32:38.019499
+
+[2026-06-28 01:32:38.039248] 
+ START QUERY: variant_q13_v1.sql
+[2026-06-28 01:32:38.050979]   ▶ run 1 started
+[2026-06-28 01:32:54.941002]   ✔ run 1 finished in 16.8803s
+[2026-06-28 01:32:54.956869]   ▶ run 2 started
+[2026-06-28 01:33:11.299005]   ✔ run 2 finished in 16.3346s
+[2026-06-28 01:33:11.308379]   ▶ run 3 started
+[2026-06-28 01:33:31.044373]   ✔ run 3 finished in 19.7293s
+[2026-06-28 01:33:31.053007]  generating plan for variant_q13_v1.sql
+[2026-06-28 01:33:47.788767]   ✔ plan saved: experiment/runs/plans/variant_q13_v1.json
+[2026-06-28 01:33:47.797906] 🏁 END QUERY: variant_q13_v1.sql | started 2026-06-28 01:32:38.041008 | ended 2026-06-28 01:33:47.790354
+
+[2026-06-28 01:33:47.805203] 
+ START QUERY: variant_q13_v2.sql
+[2026-06-28 01:33:47.816688]   ▶ run 1 started
+[2026-06-28 01:34:04.087717]   ✔ run 1 finished in 16.2608s
+[2026-06-28 01:34:04.097586]   ▶ run 2 started
+[2026-06-28 01:34:19.809886]   ✔ run 2 finished in 15.7009s
+[2026-06-28 01:34:19.820283]   ▶ run 3 started
+[2026-06-28 01:34:35.786902]   ✔ run 3 finished in 15.9568s
+[2026-06-28 01:34:35.795842]  generating plan for variant_q13_v2.sql
+[2026-06-28 01:34:52.798842]   ✔ plan saved: experiment/runs/plans/variant_q13_v2.json
+[2026-06-28 01:34:52.809000] 🏁 END QUERY: variant_q13_v2.sql | started 2026-06-28 01:33:47.806829 | ended 2026-06-28 01:34:52.801071
+
+[2026-06-28 01:34:52.818227] 
+ START QUERY: variant_q13_v3.sql
+[2026-06-28 01:34:52.830782]   ▶ run 1 started
+[2026-06-28 01:35:08.737675]   ✔ run 1 finished in 15.8995s
+[2026-06-28 01:35:08.746352]   ▶ run 2 started
+[2026-06-28 01:35:24.696377]   ✔ run 2 finished in 15.9403s
+[2026-06-28 01:35:24.706518]   ▶ run 3 started
+[2026-06-28 01:35:40.779673]   ✔ run 3 finished in 16.0625s
+[2026-06-28 01:35:40.792152]  generating plan for variant_q13_v3.sql
+[2026-06-28 01:35:58.951831]   ✔ plan saved: experiment/runs/plans/variant_q13_v3.json
+[2026-06-28 01:35:58.964248] 🏁 END QUERY: variant_q13_v3.sql | started 2026-06-28 01:34:52.821578 | ended 2026-06-28 01:35:58.953707
+
+[2026-06-28 01:35:58.974730] 
+ START QUERY: variant_q13_v4.sql
+[2026-06-28 01:35:58.984043]   ▶ run 1 started
+[2026-06-28 01:36:15.169125]   ✔ run 1 finished in 16.1765s
+[2026-06-28 01:36:15.177564]   ▶ run 2 started
+[2026-06-28 01:36:30.826521]   ✔ run 2 finished in 15.6404s
+[2026-06-28 01:36:30.835190]   ▶ run 3 started
+[2026-06-28 01:36:46.860312]   ✔ run 3 finished in 16.0168s
+[2026-06-28 01:36:46.870072]  generating plan for variant_q13_v4.sql
+[2026-06-28 01:37:03.387269]   ✔ plan saved: experiment/runs/plans/variant_q13_v4.json
+[2026-06-28 01:37:03.396516] 🏁 END QUERY: variant_q13_v4.sql | started 2026-06-28 01:35:58.976673 | ended 2026-06-28 01:37:03.388956
+
+[2026-06-28 01:37:03.405702] 
+ START QUERY: variant_q14_v1.sql
+[2026-06-28 01:37:03.414396]   ▶ run 1 started
+[2026-06-28 01:37:19.344170]   ✔ run 1 finished in 15.9213s
+[2026-06-28 01:37:19.354124]   ▶ run 2 started
+[2026-06-28 01:37:36.385962]   ✔ run 2 finished in 17.0223s
+[2026-06-28 01:37:36.394893]   ▶ run 3 started
+[2026-06-28 01:37:52.807398]   ✔ run 3 finished in 16.4053s
+[2026-06-28 01:37:52.818099]  generating plan for variant_q14_v1.sql
+[2026-06-28 01:38:08.864473]   ✔ plan saved: experiment/runs/plans/variant_q14_v1.json
+[2026-06-28 01:38:08.873652] 🏁 END QUERY: variant_q14_v1.sql | started 2026-06-28 01:37:03.407662 | ended 2026-06-28 01:38:08.865852
+
+[2026-06-28 01:38:08.881408] 
+ START QUERY: variant_q14_v2.sql
+[2026-06-28 01:38:08.892414]   ▶ run 1 started
+[2026-06-28 01:38:24.464028]   ✔ run 1 finished in 15.5617s
+[2026-06-28 01:38:24.473010]   ▶ run 2 started
+[2026-06-28 01:38:39.843734]   ✔ run 2 finished in 15.3629s
+[2026-06-28 01:38:39.853375]   ▶ run 3 started
+[2026-06-28 01:38:55.580017]   ✔ run 3 finished in 15.7181s
+[2026-06-28 01:38:55.590623]  generating plan for variant_q14_v2.sql
+[2026-06-28 01:39:11.592240]   ✔ plan saved: experiment/runs/plans/variant_q14_v2.json
+[2026-06-28 01:39:11.601980] 🏁 END QUERY: variant_q14_v2.sql | started 2026-06-28 01:38:08.882882 | ended 2026-06-28 01:39:11.593836
+
+[2026-06-28 01:39:11.609713] 
+ START QUERY: variant_q14_v3.sql
+[2026-06-28 01:39:11.619226]   ▶ run 1 started
+[2026-06-28 01:39:28.447142]   ✔ run 1 finished in 16.8184s
+[2026-06-28 01:39:28.458321]   ▶ run 2 started
+[2026-06-28 01:39:45.318482]   ✔ run 2 finished in 16.8509s
+[2026-06-28 01:39:45.329419]   ▶ run 3 started
+[2026-06-28 01:40:02.294975]   ✔ run 3 finished in 16.9572s
+[2026-06-28 01:40:02.303677]  generating plan for variant_q14_v3.sql
+[2026-06-28 01:40:19.061190]   ✔ plan saved: experiment/runs/plans/variant_q14_v3.json
+[2026-06-28 01:40:19.070219] 🏁 END QUERY: variant_q14_v3.sql | started 2026-06-28 01:39:11.611301 | ended 2026-06-28 01:40:19.063075
+
+[2026-06-28 01:40:19.078240] 
+ START QUERY: variant_q14_v4.sql
+[2026-06-28 01:40:19.086395]   ▶ run 1 started
+[2026-06-28 01:40:38.796479]   ✔ run 1 finished in 19.7010s
+[2026-06-28 01:40:38.805168]   ▶ run 2 started
+[2026-06-28 01:40:58.292440]   ✔ run 2 finished in 19.4778s
+[2026-06-28 01:40:58.300963]   ▶ run 3 started
+[2026-06-28 01:41:17.330926]   ✔ run 3 finished in 19.0222s
+[2026-06-28 01:41:17.339086]  generating plan for variant_q14_v4.sql
+[2026-06-28 01:41:37.113369]   ✔ plan saved: experiment/runs/plans/variant_q14_v4.json
+[2026-06-28 01:41:37.122536] 🏁 END QUERY: variant_q14_v4.sql | started 2026-06-28 01:40:19.079799 | ended 2026-06-28 01:41:37.116453
+
+[2026-06-28 01:41:37.129833] 
+ START QUERY: variant_q15_v1.sql
+[2026-06-28 01:41:37.136836]   ▶ run 1 started
+[2026-06-28 01:41:50.567851]   ✔ run 1 finished in 13.4220s
+[2026-06-28 01:41:50.575977]   ▶ run 2 started
+[2026-06-28 01:42:03.335472]   ✔ run 2 finished in 12.7491s
+[2026-06-28 01:42:03.344012]   ▶ run 3 started
+[2026-06-28 01:42:16.842030]   ✔ run 3 finished in 13.4900s
+[2026-06-28 01:42:16.850994]  generating plan for variant_q15_v1.sql
+[2026-06-28 01:42:29.860244]   ✔ plan saved: experiment/runs/plans/variant_q15_v1.json
+[2026-06-28 01:42:29.869351] 🏁 END QUERY: variant_q15_v1.sql | started 2026-06-28 01:41:37.131037 | ended 2026-06-28 01:42:29.861600
+
+[2026-06-28 01:42:29.878120] 
+ START QUERY: variant_q15_v2.sql
+[2026-06-28 01:42:29.884690]   ▶ run 1 started
+[2026-06-28 01:42:43.974693]   ✔ run 1 finished in 14.0814s
+[2026-06-28 01:42:43.983565]   ▶ run 2 started
+[2026-06-28 01:42:58.749138]   ✔ run 2 finished in 14.7566s
+[2026-06-28 01:42:58.757732]   ▶ run 3 started
+[2026-06-28 01:43:13.349640]   ✔ run 3 finished in 14.5844s
+[2026-06-28 01:43:13.358058]  generating plan for variant_q15_v2.sql
+[2026-06-28 01:43:28.386585]   ✔ plan saved: experiment/runs/plans/variant_q15_v2.json
+[2026-06-28 01:43:28.395673] 🏁 END QUERY: variant_q15_v2.sql | started 2026-06-28 01:42:29.879305 | ended 2026-06-28 01:43:28.388391
+
+[2026-06-28 01:43:28.404164] 
+ START QUERY: variant_q15_v3.sql
+[2026-06-28 01:43:28.411995]   ▶ run 1 started
+[2026-06-28 01:43:44.322850]   ✔ run 1 finished in 15.9023s
+[2026-06-28 01:43:44.331099]   ▶ run 2 started
+[2026-06-28 01:43:59.726713]   ✔ run 2 finished in 15.3878s
+[2026-06-28 01:43:59.736464]   ▶ run 3 started
+[2026-06-28 01:44:15.713001]   ✔ run 3 finished in 15.9667s
+[2026-06-28 01:44:15.721514]  generating plan for variant_q15_v3.sql
+[2026-06-28 01:44:31.661609]   ✔ plan saved: experiment/runs/plans/variant_q15_v3.json
+[2026-06-28 01:44:31.669560] 🏁 END QUERY: variant_q15_v3.sql | started 2026-06-28 01:43:28.405482 | ended 2026-06-28 01:44:31.663287
+
+[2026-06-28 01:44:31.678047] 
+ START QUERY: variant_q15_v4.sql
+[2026-06-28 01:44:31.685298]   ▶ run 1 started
+[2026-06-28 01:44:48.716007]   ✔ run 1 finished in 17.0220s
+[2026-06-28 01:44:48.724350]   ▶ run 2 started
+[2026-06-28 01:45:05.882340]   ✔ run 2 finished in 17.1509s
+[2026-06-28 01:45:05.891995]   ▶ run 3 started
+[2026-06-28 01:45:22.811907]   ✔ run 3 finished in 16.9120s
+[2026-06-28 01:45:22.820354]  generating plan for variant_q15_v4.sql
+[2026-06-28 01:45:39.446690]   ✔ plan saved: experiment/runs/plans/variant_q15_v4.json
+[2026-06-28 01:45:39.454592] 🏁 END QUERY: variant_q15_v4.sql | started 2026-06-28 01:44:31.679295 | ended 2026-06-28 01:45:39.448216
+
+[2026-06-28 01:45:39.461400] 
+ START QUERY: variant_q16_v1.sql
+[2026-06-28 01:45:39.469568]   ▶ run 1 started
+[2026-06-28 01:45:45.199501]   ✔ run 1 finished in 5.7232s
+[2026-06-28 01:45:45.208709]   ▶ run 2 started
+[2026-06-28 01:45:49.378132]   ✔ run 2 finished in 4.1628s
+[2026-06-28 01:45:49.385980]   ▶ run 3 started
+[2026-06-28 01:45:54.757860]   ✔ run 3 finished in 5.3650s
+[2026-06-28 01:45:54.765828]  generating plan for variant_q16_v1.sql
+[2026-06-28 01:46:00.359631]   ✔ plan saved: experiment/runs/plans/variant_q16_v1.json
+[2026-06-28 01:46:00.367107] 🏁 END QUERY: variant_q16_v1.sql | started 2026-06-28 01:45:39.463128 | ended 2026-06-28 01:46:00.360965
+
+[2026-06-28 01:46:00.374166] 
+ START QUERY: variant_q16_v2.sql
+[2026-06-28 01:46:00.383257]   ▶ run 1 started
+[2026-06-28 01:46:05.400255]   ✔ run 1 finished in 5.0088s
+[2026-06-28 01:46:05.409040]   ▶ run 2 started
+[2026-06-28 01:46:09.467411]   ✔ run 2 finished in 4.0505s
+[2026-06-28 01:46:09.475806]   ▶ run 3 started
+[2026-06-28 01:46:13.955000]   ✔ run 3 finished in 4.4714s
+[2026-06-28 01:46:13.963692]  generating plan for variant_q16_v2.sql
+[2026-06-28 01:46:19.157162]   ✔ plan saved: experiment/runs/plans/variant_q16_v2.json
+[2026-06-28 01:46:19.164740] 🏁 END QUERY: variant_q16_v2.sql | started 2026-06-28 01:46:00.376036 | ended 2026-06-28 01:46:19.158476
+
+[2026-06-28 01:46:19.174969] 
+ START QUERY: variant_q16_v3.sql
+[2026-06-28 01:46:19.181841]   ▶ run 1 started
+[2026-06-28 01:46:26.848063]   ✔ run 1 finished in 7.6582s
+[2026-06-28 01:46:26.856714]   ▶ run 2 started
+[2026-06-28 01:46:35.192954]   ✔ run 2 finished in 8.3273s
+[2026-06-28 01:46:35.202072]   ▶ run 3 started
+[2026-06-28 01:46:43.277098]   ✔ run 3 finished in 8.0637s
+[2026-06-28 01:46:43.285306]  generating plan for variant_q16_v3.sql
+[2026-06-28 01:46:53.362387]   ✔ plan saved: experiment/runs/plans/variant_q16_v3.json
+[2026-06-28 01:46:53.370359] 🏁 END QUERY: variant_q16_v3.sql | started 2026-06-28 01:46:19.176282 | ended 2026-06-28 01:46:53.363887
+
+[2026-06-28 01:46:53.378497] 
+ START QUERY: variant_q16_v4.sql
+[2026-06-28 01:46:53.386109]   ▶ run 1 started
+[2026-06-28 01:46:59.436514]   ✔ run 1 finished in 6.0425s
+[2026-06-28 01:46:59.444129]   ▶ run 2 started
+[2026-06-28 01:47:04.114508]   ✔ run 2 finished in 4.6620s
+[2026-06-28 01:47:04.122410]   ▶ run 3 started
+[2026-06-28 01:47:08.356242]   ✔ run 3 finished in 4.2255s
+[2026-06-28 01:47:08.364393]  generating plan for variant_q16_v4.sql
+[2026-06-28 01:47:14.238851]   ✔ plan saved: experiment/runs/plans/variant_q16_v4.json
+[2026-06-28 01:47:14.246443] 🏁 END QUERY: variant_q16_v4.sql | started 2026-06-28 01:46:53.379898 | ended 2026-06-28 01:47:14.240092
+
+[2026-06-28 01:47:14.254285] 
+ START QUERY: variant_q17_v1.sql
+[2026-06-28 01:47:14.261657]   ▶ run 1 started
+[2026-06-28 02:07:14.273830]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-28 02:07:14.282564]   ▶ run 2 started
+[2026-06-28 02:27:14.314338]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-28 02:27:14.322814]   ▶ run 3 started
+[2026-06-28 02:47:14.334183]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-28 02:47:14.343355]  generating plan for variant_q17_v1.sql
+[2026-06-28 03:07:14.370494]   ✔ plan saved: experiment/runs/plans/variant_q17_v1.json
+[2026-06-28 03:07:14.377973] 🏁 END QUERY: variant_q17_v1.sql | started 2026-06-28 01:47:14.255520 | ended 2026-06-28 03:07:14.371973
+
+[2026-06-28 03:07:14.383642] 
+ START QUERY: variant_q17_v2.sql
+[2026-06-28 03:07:14.390547]   ▶ run 1 started
+[2026-06-28 03:27:14.435752]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-28 03:27:14.445503]   ▶ run 2 started
+[2026-06-28 03:47:14.437771]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-28 03:47:14.447924]   ▶ run 3 started
+[2026-06-28 04:07:14.464389]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-28 04:07:14.473694]  generating plan for variant_q17_v2.sql
+[2026-06-28 04:27:14.504611]   ✔ plan saved: experiment/runs/plans/variant_q17_v2.json
+[2026-06-28 04:27:14.512932] 🏁 END QUERY: variant_q17_v2.sql | started 2026-06-28 03:07:14.384742 | ended 2026-06-28 04:27:14.506517
+
+[2026-06-28 04:27:14.520100] 
+ START QUERY: variant_q17_v3.sql
+[2026-06-28 04:27:14.529864]   ▶ run 1 started
+[2026-06-28 04:27:15.582840]   ✔ run 1 finished in 1.0461s
+[2026-06-28 04:27:15.590706]   ▶ run 2 started
+[2026-06-28 04:27:15.897537]   ✔ run 2 finished in 0.2991s
+[2026-06-28 04:27:15.906928]   ▶ run 3 started
+[2026-06-28 04:27:16.226345]   ✔ run 3 finished in 0.3107s
+[2026-06-28 04:27:16.235495]  generating plan for variant_q17_v3.sql
+[2026-06-28 04:27:16.555498]   ✔ plan saved: experiment/runs/plans/variant_q17_v3.json
+[2026-06-28 04:27:16.565184] 🏁 END QUERY: variant_q17_v3.sql | started 2026-06-28 04:27:14.521212 | ended 2026-06-28 04:27:16.557175
+
+[2026-06-28 04:27:16.573654] 
+ START QUERY: variant_q17_v4.sql
+[2026-06-28 04:27:16.582860]   ▶ run 1 started
+[2026-06-28 04:47:16.610416]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-28 04:47:16.618658]   ▶ run 2 started
+[2026-06-28 05:07:16.628894]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-28 05:07:16.637275]   ▶ run 3 started
+[2026-06-28 05:27:16.674252]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-28 05:27:16.682568]  generating plan for variant_q17_v4.sql
+[2026-06-28 05:47:16.716118]   ✔ plan saved: experiment/runs/plans/variant_q17_v4.json
+[2026-06-28 05:47:16.723697] 🏁 END QUERY: variant_q17_v4.sql | started 2026-06-28 04:27:16.575626 | ended 2026-06-28 05:47:16.717665
+
+[2026-06-28 05:47:16.730611] 
+ START QUERY: variant_q18_v1.sql
+[2026-06-28 05:47:16.739562]   ▶ run 1 started
+[2026-06-28 05:50:34.817186]   ✔ run 1 finished in 198.0709s
+[2026-06-28 05:50:34.827480]   ▶ run 2 started
+[2026-06-28 05:53:43.165160]   ✔ run 2 finished in 188.3271s
+[2026-06-28 05:53:43.176627]   ▶ run 3 started
+[2026-06-28 05:56:57.322072]   ✔ run 3 finished in 194.1332s
+[2026-06-28 05:56:57.331100]  generating plan for variant_q18_v1.sql
+[2026-06-28 06:00:23.209039]   ✔ plan saved: experiment/runs/plans/variant_q18_v1.json
+[2026-06-28 06:00:23.217640] 🏁 END QUERY: variant_q18_v1.sql | started 2026-06-28 05:47:16.732077 | ended 2026-06-28 06:00:23.211061
+
+[2026-06-28 06:00:23.223881] 
+ START QUERY: variant_q18_v2.sql
+[2026-06-28 06:00:23.233217]   ▶ run 1 started
+[2026-06-28 06:01:46.787461]   ✔ run 1 finished in 83.5445s
+[2026-06-28 06:01:46.797219]   ▶ run 2 started
+[2026-06-28 06:03:20.517986]   ✔ run 2 finished in 93.7106s
+[2026-06-28 06:03:20.526514]   ▶ run 3 started
+[2026-06-28 06:04:44.339088]   ✔ run 3 finished in 83.8051s
+[2026-06-28 06:04:44.347204]  generating plan for variant_q18_v2.sql
+[2026-06-28 06:06:12.496025]   ✔ plan saved: experiment/runs/plans/variant_q18_v2.json
+[2026-06-28 06:06:12.503825] 🏁 END QUERY: variant_q18_v2.sql | started 2026-06-28 06:00:23.225195 | ended 2026-06-28 06:06:12.497762
+
+[2026-06-28 06:06:12.509783] 
+ START QUERY: variant_q18_v3.sql
+[2026-06-28 06:06:12.518470]   ▶ run 1 started
+[2026-06-28 06:07:48.355023]   ✔ run 1 finished in 95.8282s
+[2026-06-28 06:07:48.363519]   ▶ run 2 started
+[2026-06-28 06:09:12.751844]   ✔ run 2 finished in 84.3794s
+[2026-06-28 06:09:12.760595]   ▶ run 3 started
+[2026-06-28 06:10:38.117052]   ✔ run 3 finished in 85.3498s
+[2026-06-28 06:10:38.125896]  generating plan for variant_q18_v3.sql
+[2026-06-28 06:12:06.953962]   ✔ plan saved: experiment/runs/plans/variant_q18_v3.json
+[2026-06-28 06:12:06.963369] 🏁 END QUERY: variant_q18_v3.sql | started 2026-06-28 06:06:12.511022 | ended 2026-06-28 06:12:06.956192
+
+[2026-06-28 06:12:06.972227] 
+ START QUERY: variant_q18_v4.sql
+[2026-06-28 06:12:06.978839]   ▶ run 1 started
+[2026-06-28 06:13:40.167253]   ✔ run 1 finished in 93.1794s
+[2026-06-28 06:13:40.175368]   ▶ run 2 started
+[2026-06-28 06:15:04.057181]   ✔ run 2 finished in 83.8756s
+[2026-06-28 06:15:04.065623]   ▶ run 3 started
+[2026-06-28 06:16:28.517647]   ✔ run 3 finished in 84.4459s
+[2026-06-28 06:16:28.527236]  generating plan for variant_q18_v4.sql
+[2026-06-28 06:17:54.515965]   ✔ plan saved: experiment/runs/plans/variant_q18_v4.json
+[2026-06-28 06:17:54.524478] 🏁 END QUERY: variant_q18_v4.sql | started 2026-06-28 06:12:06.973341 | ended 2026-06-28 06:17:54.517956
+
+[2026-06-28 06:17:54.531346] 
+ START QUERY: variant_q19_v1.sql
+[2026-06-28 06:17:54.540151]   ▶ run 1 started
+[2026-06-28 06:18:08.873336]   ✔ run 1 finished in 14.3246s
+[2026-06-28 06:18:08.881500]   ▶ run 2 started
+[2026-06-28 06:18:22.583418]   ✔ run 2 finished in 13.6923s
+[2026-06-28 06:18:22.592568]   ▶ run 3 started
+[2026-06-28 06:18:36.147122]   ✔ run 3 finished in 13.5466s
+[2026-06-28 06:18:36.155489]  generating plan for variant_q19_v1.sql
+[2026-06-28 06:18:49.863458]   ✔ plan saved: experiment/runs/plans/variant_q19_v1.json
+[2026-06-28 06:18:49.872222] 🏁 END QUERY: variant_q19_v1.sql | started 2026-06-28 06:17:54.533458 | ended 2026-06-28 06:18:49.865246
+
+[2026-06-28 06:18:49.879496] 
+ START QUERY: variant_q19_v2.sql
+[2026-06-28 06:18:49.888452]   ▶ run 1 started
+[2026-06-28 06:19:04.419173]   ✔ run 1 finished in 14.5221s
+[2026-06-28 06:19:04.428390]   ▶ run 2 started
+[2026-06-28 06:19:18.022358]   ✔ run 2 finished in 13.5867s
+[2026-06-28 06:19:18.031375]   ▶ run 3 started
+[2026-06-28 06:19:32.592516]   ✔ run 3 finished in 14.5531s
+[2026-06-28 06:19:32.601392]  generating plan for variant_q19_v2.sql
+[2026-06-28 06:19:45.876412]   ✔ plan saved: experiment/runs/plans/variant_q19_v2.json
+[2026-06-28 06:19:45.885197] 🏁 END QUERY: variant_q19_v2.sql | started 2026-06-28 06:18:49.881706 | ended 2026-06-28 06:19:45.878357
+
+[2026-06-28 06:19:45.892294] 
+ START QUERY: variant_q19_v3.sql
+[2026-06-28 06:19:45.901446]   ▶ run 1 started
+[2026-06-28 06:19:59.390598]   ✔ run 1 finished in 13.4806s
+[2026-06-28 06:19:59.399474]   ▶ run 2 started
+[2026-06-28 06:20:13.426345]   ✔ run 2 finished in 14.0182s
+[2026-06-28 06:20:13.435322]   ▶ run 3 started
+[2026-06-28 06:20:26.690141]   ✔ run 3 finished in 13.2473s
+[2026-06-28 06:20:26.699480]  generating plan for variant_q19_v3.sql
+[2026-06-28 06:20:39.663046]   ✔ plan saved: experiment/runs/plans/variant_q19_v3.json
+[2026-06-28 06:20:39.671117] 🏁 END QUERY: variant_q19_v3.sql | started 2026-06-28 06:19:45.893682 | ended 2026-06-28 06:20:39.664553
+
+[2026-06-28 06:20:39.677329] 
+ START QUERY: variant_q19_v4.sql
+[2026-06-28 06:20:39.684890]   ▶ run 1 started
+[2026-06-28 06:20:52.935678]   ✔ run 1 finished in 13.2430s
+[2026-06-28 06:20:52.945736]   ▶ run 2 started
+[2026-06-28 06:21:05.979784]   ✔ run 2 finished in 13.0237s
+[2026-06-28 06:21:05.988401]   ▶ run 3 started
+[2026-06-28 06:21:19.290452]   ✔ run 3 finished in 13.2940s
+[2026-06-28 06:21:19.299007]  generating plan for variant_q19_v4.sql
+[2026-06-28 06:21:33.050697]   ✔ plan saved: experiment/runs/plans/variant_q19_v4.json
+[2026-06-28 06:21:33.059685] 🏁 END QUERY: variant_q19_v4.sql | started 2026-06-28 06:20:39.678647 | ended 2026-06-28 06:21:33.052059
+
+[2026-06-28 06:21:33.067925] 
+ START QUERY: variant_q1_v1.sql
+[2026-06-28 06:21:33.075852]   ▶ run 1 started
+[2026-06-28 06:22:14.430601]   ✔ run 1 finished in 41.3460s
+[2026-06-28 06:22:14.439623]   ▶ run 2 started
+[2026-06-28 06:22:56.462671]   ✔ run 2 finished in 42.0138s
+[2026-06-28 06:22:56.470682]   ▶ run 3 started
+[2026-06-28 06:23:37.584117]   ✔ run 3 finished in 41.1059s
+[2026-06-28 06:23:37.594378]  generating plan for variant_q1_v1.sql
+[2026-06-28 06:24:19.526775]   ✔ plan saved: experiment/runs/plans/variant_q1_v1.json
+[2026-06-28 06:24:19.534170] 🏁 END QUERY: variant_q1_v1.sql | started 2026-06-28 06:21:33.069215 | ended 2026-06-28 06:24:19.528913
+
+[2026-06-28 06:24:19.542779] 
+ START QUERY: variant_q1_v2.sql
+[2026-06-28 06:24:19.549191]   ▶ run 1 started
+[2026-06-28 06:24:59.874259]   ✔ run 1 finished in 40.3176s
+[2026-06-28 06:24:59.882980]   ▶ run 2 started
+[2026-06-28 06:25:40.633255]   ✔ run 2 finished in 40.7420s
+[2026-06-28 06:25:40.643130]   ▶ run 3 started
+[2026-06-28 06:26:24.963292]   ✔ run 3 finished in 44.3115s
+[2026-06-28 06:26:24.972517]  generating plan for variant_q1_v2.sql
+[2026-06-28 06:27:10.978469]   ✔ plan saved: experiment/runs/plans/variant_q1_v2.json
+[2026-06-28 06:27:10.987512] 🏁 END QUERY: variant_q1_v2.sql | started 2026-06-28 06:24:19.544120 | ended 2026-06-28 06:27:10.980132
+
+[2026-06-28 06:27:10.996398] 
+ START QUERY: variant_q1_v3.sql
+[2026-06-28 06:27:11.004688]   ▶ run 1 started
+[2026-06-28 06:27:54.574827]   ✔ run 1 finished in 43.5614s
+[2026-06-28 06:27:54.584055]   ▶ run 2 started
+[2026-06-28 06:28:37.773463]   ✔ run 2 finished in 43.1822s
+[2026-06-28 06:28:37.783559]   ▶ run 3 started
+[2026-06-28 06:29:20.938047]   ✔ run 3 finished in 43.1458s
+[2026-06-28 06:29:20.947384]  generating plan for variant_q1_v3.sql
+[2026-06-28 06:30:05.653983]   ✔ plan saved: experiment/runs/plans/variant_q1_v3.json
+[2026-06-28 06:30:05.662137] 🏁 END QUERY: variant_q1_v3.sql | started 2026-06-28 06:27:10.997828 | ended 2026-06-28 06:30:05.655636
+
+[2026-06-28 06:30:05.669053] 
+ START QUERY: variant_q1_v4.sql
+[2026-06-28 06:30:05.679175]   ▶ run 1 started
+[2026-06-28 06:30:48.576190]   ✔ run 1 finished in 42.8891s
+[2026-06-28 06:30:48.584479]   ▶ run 2 started
+[2026-06-28 06:31:31.332346]   ✔ run 2 finished in 42.7401s
+[2026-06-28 06:31:31.341985]   ▶ run 3 started
+[2026-06-28 06:32:14.137121]   ✔ run 3 finished in 42.7874s
+[2026-06-28 06:32:14.145675]  generating plan for variant_q1_v4.sql
+[2026-06-28 06:32:57.788021]   ✔ plan saved: experiment/runs/plans/variant_q1_v4.json
+[2026-06-28 06:32:57.796338] 🏁 END QUERY: variant_q1_v4.sql | started 2026-06-28 06:30:05.670396 | ended 2026-06-28 06:32:57.789652
+
+[2026-06-28 06:32:57.803466] 
+ START QUERY: variant_q20_v1.sql
+[2026-06-28 06:32:57.812550]   ▶ run 1 started
+[2026-06-28 06:52:57.879723]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-28 06:52:57.900218]   ▶ run 2 started
+[2026-06-28 07:12:57.896700]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-28 07:12:57.905347]   ▶ run 3 started
+[2026-06-28 07:32:57.904715]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-28 07:32:57.913574]  generating plan for variant_q20_v1.sql
+[2026-06-28 07:52:58.009578]   ✔ plan saved: experiment/runs/plans/variant_q20_v1.json
+[2026-06-28 07:52:58.018162] 🏁 END QUERY: variant_q20_v1.sql | started 2026-06-28 06:32:57.804762 | ended 2026-06-28 07:52:58.011535
+
+[2026-06-28 07:52:58.025579] 
+ START QUERY: variant_q20_v2.sql
+[2026-06-28 07:52:58.034249]   ▶ run 1 started
+[2026-06-28 08:12:58.084021]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-28 08:12:58.095399]   ▶ run 2 started
+[2026-06-28 08:32:58.128743]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-28 08:32:58.136441]   ▶ run 3 started
+[2026-06-28 08:52:58.177757]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-28 08:52:58.186786]  generating plan for variant_q20_v2.sql
+[2026-06-28 09:12:58.247573]   ✔ plan saved: experiment/runs/plans/variant_q20_v2.json
+[2026-06-28 09:12:58.255656] 🏁 END QUERY: variant_q20_v2.sql | started 2026-06-28 07:52:58.028148 | ended 2026-06-28 09:12:58.249332
+
+[2026-06-28 09:12:58.262059] 
+ START QUERY: variant_q20_v3.sql
+[2026-06-28 09:12:58.269866]   ▶ run 1 started
+[2026-06-28 09:32:58.290119]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-28 09:32:58.298997]   ▶ run 2 started
+[2026-06-28 09:52:58.317985]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-28 09:52:58.327970]   ▶ run 3 started
+[2026-06-28 10:12:58.373295]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-28 10:12:58.395511]  generating plan for variant_q20_v3.sql
+[2026-06-28 10:32:58.428684]   ✔ plan saved: experiment/runs/plans/variant_q20_v3.json
+[2026-06-28 10:32:58.436784] 🏁 END QUERY: variant_q20_v3.sql | started 2026-06-28 09:12:58.263169 | ended 2026-06-28 10:32:58.430382
+
+[2026-06-28 10:32:58.442579] 
+ START QUERY: variant_q20_v4.sql
+[2026-06-28 10:32:58.451300]   ▶ run 1 started
+[2026-06-28 10:52:58.471631]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-28 10:52:58.480562]   ▶ run 2 started
+[2026-06-28 11:12:58.506751]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-28 11:12:58.515461]   ▶ run 3 started
+[2026-06-28 11:32:58.542624]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-28 11:32:58.553384]  generating plan for variant_q20_v4.sql
+[2026-06-28 11:52:58.589844]   ✔ plan saved: experiment/runs/plans/variant_q20_v4.json
+[2026-06-28 11:52:58.597459] 🏁 END QUERY: variant_q20_v4.sql | started 2026-06-28 10:32:58.444380 | ended 2026-06-28 11:52:58.591649
+
+[2026-06-28 11:52:58.606119] 
+ START QUERY: variant_q21_v1.sql
+[2026-06-28 11:52:58.612330]   ▶ run 1 started
+[2026-06-28 12:13:00.006440]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-28 12:13:00.050750]   ▶ run 2 started
+[2026-06-28 12:33:01.392470]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-28 12:33:01.415892]   ▶ run 3 started
+[2026-06-28 12:53:02.676820]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-28 12:53:02.691073]  generating plan for variant_q21_v1.sql
+[2026-06-28 13:13:03.955830]   ✔ plan saved: experiment/runs/plans/variant_q21_v1.json
+[2026-06-28 13:13:03.967812] 🏁 END QUERY: variant_q21_v1.sql | started 2026-06-28 11:52:58.607254 | ended 2026-06-28 13:13:03.958593
+
+[2026-06-28 13:13:03.976251] 
+ START QUERY: variant_q21_v2.sql
+[2026-06-28 13:13:03.995842]   ▶ run 1 started
+[2026-06-28 13:33:05.203275]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-28 13:33:05.215711]   ▶ run 2 started
+[2026-06-28 14:03:11.092486]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-28 14:03:11.109546]   ▶ run 3 started
+[2026-06-28 14:23:12.743142]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-28 14:23:12.754249]  generating plan for variant_q21_v2.sql
+[2026-06-28 14:43:14.070765]   ✔ plan saved: experiment/runs/plans/variant_q21_v2.json
+[2026-06-28 14:43:14.078934] 🏁 END QUERY: variant_q21_v2.sql | started 2026-06-28 13:13:03.977391 | ended 2026-06-28 14:43:14.072341
+
+[2026-06-28 14:43:14.087989] 
+ START QUERY: variant_q21_v3.sql
+[2026-06-28 14:43:14.101279]   ▶ run 1 started
+[2026-06-28 15:03:15.404439]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-28 15:03:15.436480]   ▶ run 2 started
+[2026-06-28 15:23:16.695225]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-28 15:23:16.726045]   ▶ run 3 started
+[2026-06-28 15:43:18.205853]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-28 15:43:18.227108]  generating plan for variant_q21_v3.sql
+[2026-06-28 16:03:19.527946]   ✔ plan saved: experiment/runs/plans/variant_q21_v3.json
+[2026-06-28 16:03:19.539246] 🏁 END QUERY: variant_q21_v3.sql | started 2026-06-28 14:43:14.089914 | ended 2026-06-28 16:03:19.531189
+
+[2026-06-28 16:03:19.552367] 
+ START QUERY: variant_q21_v4.sql
+[2026-06-28 16:03:19.572139]   ▶ run 1 started
+[2026-06-28 16:23:21.082371]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-28 16:23:21.104504]   ▶ run 2 started
+[2026-06-28 16:43:22.283412]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-28 16:43:22.307649]   ▶ run 3 started
+[2026-06-28 17:03:24.252416]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-28 17:03:24.284408]  generating plan for variant_q21_v4.sql
+[2026-06-28 17:23:25.428068]   ✔ plan saved: experiment/runs/plans/variant_q21_v4.json
+[2026-06-28 17:23:25.441463] 🏁 END QUERY: variant_q21_v4.sql | started 2026-06-28 16:03:19.553717 | ended 2026-06-28 17:23:25.432850
+
+[2026-06-28 17:23:25.453878] 
+ START QUERY: variant_q22_v1.sql
+[2026-06-28 17:23:25.485390]   ▶ run 1 started
+[2026-06-28 17:23:33.205900]   ✔ run 1 finished in 7.7044s
+[2026-06-28 17:23:33.215935]   ▶ run 2 started
+[2026-06-28 17:23:39.039209]   ✔ run 2 finished in 5.8118s
+[2026-06-28 17:23:39.050877]   ▶ run 3 started
+[2026-06-28 17:23:45.302369]   ✔ run 3 finished in 6.2413s
+[2026-06-28 17:23:45.316311]  generating plan for variant_q22_v1.sql
+[2026-06-28 17:23:51.887518]   ✔ plan saved: experiment/runs/plans/variant_q22_v1.json
+[2026-06-28 17:23:51.898786] 🏁 END QUERY: variant_q22_v1.sql | started 2026-06-28 17:23:25.456861 | ended 2026-06-28 17:23:51.889643
+
+[2026-06-28 17:23:51.911609] 
+ START QUERY: variant_q22_v2.sql
+[2026-06-28 17:23:51.920164]   ▶ run 1 started
+[2026-06-28 17:23:58.347686]   ✔ run 1 finished in 6.4179s
+[2026-06-28 17:23:58.359099]   ▶ run 2 started
+[2026-06-28 17:24:04.653991]   ✔ run 2 finished in 6.2863s
+[2026-06-28 17:24:04.664898]   ▶ run 3 started
+[2026-06-28 17:24:10.482569]   ✔ run 3 finished in 5.8069s
+[2026-06-28 17:24:10.491612]  generating plan for variant_q22_v2.sql
+[2026-06-28 17:24:16.562607]   ✔ plan saved: experiment/runs/plans/variant_q22_v2.json
+[2026-06-28 17:24:16.578999] 🏁 END QUERY: variant_q22_v2.sql | started 2026-06-28 17:23:51.912982 | ended 2026-06-28 17:24:16.564345
+
+[2026-06-28 17:24:16.593180] 
+ START QUERY: variant_q22_v3.sql
+[2026-06-28 17:24:16.605701]   ▶ run 1 started
+[2026-06-28 17:24:22.806066]   ✔ run 1 finished in 6.1906s
+[2026-06-28 17:24:22.818663]   ▶ run 2 started
+[2026-06-28 17:24:29.074094]   ✔ run 2 finished in 6.2401s
+[2026-06-28 17:24:29.088733]   ▶ run 3 started
+[2026-06-28 17:24:35.272489]   ✔ run 3 finished in 6.1753s
+[2026-06-28 17:24:35.285456]  generating plan for variant_q22_v3.sql
+[2026-06-28 17:24:41.753862]   ✔ plan saved: experiment/runs/plans/variant_q22_v3.json
+[2026-06-28 17:24:41.763931] 🏁 END QUERY: variant_q22_v3.sql | started 2026-06-28 17:24:16.594997 | ended 2026-06-28 17:24:41.755641
+
+[2026-06-28 17:24:41.771572] 
+ START QUERY: variant_q22_v4.sql
+[2026-06-28 17:24:41.781003]   ▶ run 1 started
+[2026-06-28 17:24:47.695286]   ✔ run 1 finished in 5.9058s
+[2026-06-28 17:24:47.703913]   ▶ run 2 started
+[2026-06-28 17:24:53.258165]   ✔ run 2 finished in 5.5459s
+[2026-06-28 17:24:53.268597]   ▶ run 3 started
+[2026-06-28 17:24:58.992549]   ✔ run 3 finished in 5.7151s
+[2026-06-28 17:24:59.002126]  generating plan for variant_q22_v4.sql
+[2026-06-28 17:25:04.998177]   ✔ plan saved: experiment/runs/plans/variant_q22_v4.json
+[2026-06-28 17:25:05.008520] 🏁 END QUERY: variant_q22_v4.sql | started 2026-06-28 17:24:41.773287 | ended 2026-06-28 17:25:05.000061
+
+[2026-06-28 17:25:05.018099] 
+ START QUERY: variant_q2_v1.sql
+[2026-06-28 17:25:05.026537]   ▶ run 1 started
+[2026-06-28 17:45:05.783389]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-28 17:45:05.793372]   ▶ run 2 started
+[2026-06-28 18:05:06.810217]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-28 18:05:06.822302]   ▶ run 3 started
+[2026-06-28 18:25:12.053301]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-28 18:25:12.085077]  generating plan for variant_q2_v1.sql
+[2026-06-28 18:45:13.572569]   ✔ plan saved: experiment/runs/plans/variant_q2_v1.json
+[2026-06-28 18:45:13.589127] 🏁 END QUERY: variant_q2_v1.sql | started 2026-06-28 17:25:05.019280 | ended 2026-06-28 18:45:13.576098
+
+[2026-06-28 18:45:13.605377] 
+ START QUERY: variant_q2_v2.sql
+[2026-06-28 18:45:13.618315]   ▶ run 1 started
+[2026-06-28 19:05:14.508669]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-28 19:05:14.519987]   ▶ run 2 started
+[2026-06-28 19:25:14.901565]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-28 19:25:14.912265]   ▶ run 3 started
+[2026-06-28 19:45:15.619149]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-28 19:45:15.629529]  generating plan for variant_q2_v2.sql
+[2026-06-28 20:05:17.710851]   ✔ plan saved: experiment/runs/plans/variant_q2_v2.json
+[2026-06-28 20:05:17.720336] 🏁 END QUERY: variant_q2_v2.sql | started 2026-06-28 18:45:13.609315 | ended 2026-06-28 20:05:17.712743
+
+[2026-06-28 20:05:17.729426] 
+ START QUERY: variant_q2_v3.sql
+[2026-06-28 20:05:17.738562]   ▶ run 1 started
+[2026-06-28 20:25:18.523553]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-28 20:25:18.535694]   ▶ run 2 started
+[2026-06-28 20:45:18.652012]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-28 20:45:18.663029]   ▶ run 3 started
+[2026-06-28 21:05:19.487102]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-28 21:05:19.498198]  generating plan for variant_q2_v3.sql
+[2026-06-28 21:25:20.361379]   ✔ plan saved: experiment/runs/plans/variant_q2_v3.json
+[2026-06-28 21:25:20.372033] 🏁 END QUERY: variant_q2_v3.sql | started 2026-06-28 20:05:17.730678 | ended 2026-06-28 21:25:20.363094
+
+[2026-06-28 21:25:20.381396] 
+ START QUERY: variant_q2_v4.sql
+[2026-06-28 21:25:20.392797]   ▶ run 1 started
+[2026-06-28 21:45:21.243269]   ✖ run 1 failed: canceling statement due to statement timeout
+
+[2026-06-28 21:45:21.254458]   ▶ run 2 started
+[2026-06-28 22:05:22.070596]   ✖ run 2 failed: canceling statement due to statement timeout
+
+[2026-06-28 22:05:22.083386]   ▶ run 3 started
+[2026-06-28 22:25:22.827490]   ✖ run 3 failed: canceling statement due to statement timeout
+
+[2026-06-28 22:25:22.838283]  generating plan for variant_q2_v4.sql
+[2026-06-28 22:45:23.804689]   ✔ plan saved: experiment/runs/plans/variant_q2_v4.json
+[2026-06-28 22:45:23.815761] 🏁 END QUERY: variant_q2_v4.sql | started 2026-06-28 21:25:20.382984 | ended 2026-06-28 22:45:23.807108
+
+[2026-06-28 22:45:23.824054] 
+ START QUERY: variant_q3_v1.sql
+[2026-06-28 22:45:23.834267]   ▶ run 1 started
+[2026-06-28 22:45:58.685744]   ✔ run 1 finished in 34.8382s
+[2026-06-28 22:45:58.697227]   ▶ run 2 started
+[2026-06-28 22:46:38.435782]   ✔ run 2 finished in 39.6041s
+[2026-06-28 22:46:38.448151]   ▶ run 3 started
+[2026-06-28 22:47:04.371254]   ✔ run 3 finished in 25.9149s
+[2026-06-28 22:47:04.382096]  generating plan for variant_q3_v1.sql
+[2026-06-28 22:47:31.397950]   ✔ plan saved: experiment/runs/plans/variant_q3_v1.json
+[2026-06-28 22:47:31.410790] 🏁 END QUERY: variant_q3_v1.sql | started 2026-06-28 22:45:23.825210 | ended 2026-06-28 22:47:31.400302
+
+[2026-06-28 22:47:31.420270] 
+ START QUERY: variant_q3_v2.sql
+[2026-06-28 22:47:31.434495]   ▶ run 1 started
+[2026-06-28 22:47:57.162254]   ✔ run 1 finished in 25.7174s
+[2026-06-28 22:47:57.174217]   ▶ run 2 started
+[2026-06-28 22:48:22.907825]   ✔ run 2 finished in 25.7179s
+[2026-06-28 22:48:22.922587]   ▶ run 3 started
+[2026-06-28 22:48:48.540454]   ✔ run 3 finished in 25.6099s
+[2026-06-28 22:48:48.551263]  generating plan for variant_q3_v2.sql
+[2026-06-28 22:49:13.926984]   ✔ plan saved: experiment/runs/plans/variant_q3_v2.json
+[2026-06-28 22:49:13.938510] 🏁 END QUERY: variant_q3_v2.sql | started 2026-06-28 22:47:31.423841 | ended 2026-06-28 22:49:13.929450
+
+[2026-06-28 22:49:13.947501] 
+ START QUERY: variant_q3_v3.sql
+[2026-06-28 22:49:13.962304]   ▶ run 1 started
+[2026-06-28 22:49:42.278673]   ✔ run 1 finished in 28.3058s
+[2026-06-28 22:49:42.293234]   ▶ run 2 started
+[2026-06-28 22:50:12.616702]   ✔ run 2 finished in 30.3119s
+[2026-06-28 22:50:12.628798]   ▶ run 3 started
+[2026-06-28 22:50:46.483521]   ✔ run 3 finished in 33.8460s
+[2026-06-28 22:50:46.496303]  generating plan for variant_q3_v3.sql
+[2026-06-28 22:51:14.223038]   ✔ plan saved: experiment/runs/plans/variant_q3_v3.json
+[2026-06-28 22:51:14.234483] 🏁 END QUERY: variant_q3_v3.sql | started 2026-06-28 22:49:13.949680 | ended 2026-06-28 22:51:14.224862
+
+[2026-06-28 22:51:14.243253] 
+ START QUERY: variant_q3_v4.sql
+[2026-06-28 22:51:14.254626]   ▶ run 1 started
+[2026-06-28 22:51:42.540867]   ✔ run 1 finished in 28.2713s
+[2026-06-28 22:51:42.562885]   ▶ run 2 started
+[2026-06-28 22:52:10.090711]   ✔ run 2 finished in 27.5140s
+[2026-06-28 22:52:10.103951]   ▶ run 3 started
+[2026-06-28 22:52:37.693021]   ✔ run 3 finished in 27.5798s
+[2026-06-28 22:52:37.705245]  generating plan for variant_q3_v4.sql
+[2026-06-28 22:53:05.783226]   ✔ plan saved: experiment/runs/plans/variant_q3_v4.json
+[2026-06-28 22:53:05.795219] 🏁 END QUERY: variant_q3_v4.sql | started 2026-06-28 22:51:14.245616 | ended 2026-06-28 22:53:05.785400
+
+[2026-06-28 22:53:05.804722] 
+ START QUERY: variant_q4_v1.sql
+[2026-06-28 22:53:05.817267]   ▶ run 1 started
+[2026-06-28 22:53:38.101397]   ✔ run 1 finished in 32.2743s
+[2026-06-28 22:53:38.112853]   ▶ run 2 started
+[2026-06-28 22:54:10.376504]   ✔ run 2 finished in 32.2540s
+[2026-06-28 22:54:10.386365]   ▶ run 3 started
+[2026-06-28 22:54:42.956682]   ✔ run 3 finished in 32.5610s
+[2026-06-28 22:54:42.968561]  generating plan for variant_q4_v1.sql
+[2026-06-28 22:55:15.324361]   ✔ plan saved: experiment/runs/plans/variant_q4_v1.json
+[2026-06-28 22:55:15.334988] 🏁 END QUERY: variant_q4_v1.sql | started 2026-06-28 22:53:05.807537 | ended 2026-06-28 22:55:15.326020
+
+[2026-06-28 22:55:15.343261] 
+ START QUERY: variant_q4_v2.sql
+[2026-06-28 22:55:15.352436]   ▶ run 1 started
+[2026-06-28 22:55:47.064526]   ✔ run 1 finished in 31.7027s
+[2026-06-28 22:55:47.074204]   ▶ run 2 started
+[2026-06-28 22:56:18.813573]   ✔ run 2 finished in 31.7311s
+[2026-06-28 22:56:18.823861]   ▶ run 3 started
+[2026-06-28 22:56:51.642350]   ✔ run 3 finished in 32.8076s
+[2026-06-28 22:56:51.653628]  generating plan for variant_q4_v2.sql
+[2026-06-28 22:57:24.622480]   ✔ plan saved: experiment/runs/plans/variant_q4_v2.json
+[2026-06-28 22:57:24.633596] 🏁 END QUERY: variant_q4_v2.sql | started 2026-06-28 22:55:15.344546 | ended 2026-06-28 22:57:24.624406
+
+[2026-06-28 22:57:24.644622] 
+ START QUERY: variant_q4_v3.sql
+[2026-06-28 22:57:24.654565]   ▶ run 1 started
+[2026-06-28 22:57:57.414552]   ✔ run 1 finished in 32.7510s
+[2026-06-28 22:57:57.424717]   ▶ run 2 started
+[2026-06-28 22:58:29.036624]   ✔ run 2 finished in 31.6020s
+[2026-06-28 22:58:29.047920]   ▶ run 3 started
+[2026-06-28 22:59:02.289245]   ✔ run 3 finished in 33.2320s
+[2026-06-28 22:59:02.301111]  generating plan for variant_q4_v3.sql
+[2026-06-28 22:59:36.080475]   ✔ plan saved: experiment/runs/plans/variant_q4_v3.json
+[2026-06-28 22:59:36.090703] 🏁 END QUERY: variant_q4_v3.sql | started 2026-06-28 22:57:24.646405 | ended 2026-06-28 22:59:36.082450
+
+[2026-06-28 22:59:36.102282] 
+ START QUERY: variant_q4_v4.sql
+[2026-06-28 22:59:36.112660]   ▶ run 1 started
+[2026-06-28 23:00:08.783011]   ✔ run 1 finished in 32.6609s
+[2026-06-28 23:00:08.794127]   ▶ run 2 started
+[2026-06-28 23:00:41.407941]   ✔ run 2 finished in 32.6057s
+[2026-06-28 23:00:41.418439]   ▶ run 3 started
+[2026-06-28 23:01:14.804413]   ✔ run 3 finished in 33.3780s
+[2026-06-28 23:01:14.813990]  generating plan for variant_q4_v4.sql
+[2026-06-28 23:01:47.885807]   ✔ plan saved: experiment/runs/plans/variant_q4_v4.json
+[2026-06-28 23:01:47.896387] 🏁 END QUERY: variant_q4_v4.sql | started 2026-06-28 22:59:36.103867 | ended 2026-06-28 23:01:47.888105
+
+[2026-06-28 23:01:47.911970] 
+ START QUERY: variant_q5_v1.sql
+[2026-06-28 23:01:47.924278]   ▶ run 1 started
+[2026-06-28 23:04:11.878431]   ✔ run 1 finished in 143.9412s
+[2026-06-28 23:04:11.890510]   ▶ run 2 started
+[2026-06-28 23:06:30.416461]   ✔ run 2 finished in 138.5161s
+[2026-06-28 23:06:30.428893]   ▶ run 3 started
+[2026-06-28 23:08:46.498792]   ✔ run 3 finished in 136.0590s
+[2026-06-28 23:08:46.513741]  generating plan for variant_q5_v1.sql
+[2026-06-28 23:11:21.956648]   ✔ plan saved: experiment/runs/plans/variant_q5_v1.json
+[2026-06-28 23:11:21.989363] 🏁 END QUERY: variant_q5_v1.sql | started 2026-06-28 23:01:47.914060 | ended 2026-06-28 23:11:21.979936
+
+[2026-06-28 23:11:22.021632] 
+ START QUERY: variant_q5_v2.sql
+[2026-06-28 23:11:22.034893]   ▶ run 1 started
+[2026-06-28 23:13:38.522126]   ✔ run 1 finished in 136.4752s
+[2026-06-28 23:13:38.535542]   ▶ run 2 started
+[2026-06-28 23:15:55.822536]   ✔ run 2 finished in 137.2775s
+[2026-06-28 23:15:55.834244]   ▶ run 3 started
+[2026-06-28 23:18:14.210633]   ✔ run 3 finished in 138.3676s
+[2026-06-28 23:18:14.224195]  generating plan for variant_q5_v2.sql
+[2026-06-28 23:20:30.697833]   ✔ plan saved: experiment/runs/plans/variant_q5_v2.json
+[2026-06-28 23:20:30.776232] 🏁 END QUERY: variant_q5_v2.sql | started 2026-06-28 23:11:22.023904 | ended 2026-06-28 23:20:30.766200
+
+[2026-06-28 23:20:30.786246] 
+ START QUERY: variant_q5_v3.sql
+[2026-06-28 23:20:30.800169]   ▶ run 1 started
+[2026-06-28 23:22:45.074994]   ✔ run 1 finished in 134.2661s
+[2026-06-28 23:22:45.086466]   ▶ run 2 started
+[2026-06-28 23:24:52.428094]   ✔ run 2 finished in 127.3331s
+[2026-06-28 23:24:52.439649]   ▶ run 3 started
+[2026-06-28 23:27:09.471809]   ✔ run 3 finished in 137.0228s
+[2026-06-28 23:27:09.482052]  generating plan for variant_q5_v3.sql
+[2026-06-28 23:29:23.750705]   ✔ plan saved: experiment/runs/plans/variant_q5_v3.json
+[2026-06-28 23:29:23.764480] 🏁 END QUERY: variant_q5_v3.sql | started 2026-06-28 23:20:30.789252 | ended 2026-06-28 23:29:23.752821
+
+[2026-06-28 23:29:23.774817] 
+ START QUERY: variant_q5_v4.sql
+[2026-06-28 23:29:23.786877]   ▶ run 1 started
+[2026-06-28 23:32:01.636291]   ✔ run 1 finished in 157.8379s
+[2026-06-28 23:32:01.648341]   ▶ run 2 started
+[2026-06-28 23:34:22.736484]   ✔ run 2 finished in 141.0787s
+[2026-06-28 23:34:22.748527]   ▶ run 3 started
+[2026-06-28 23:36:47.562109]   ✔ run 3 finished in 144.8029s
+[2026-06-28 23:36:47.576216]  generating plan for variant_q5_v4.sql
+[2026-06-28 23:39:10.062042]   ✔ plan saved: experiment/runs/plans/variant_q5_v4.json
+[2026-06-28 23:39:10.082124] 🏁 END QUERY: variant_q5_v4.sql | started 2026-06-28 23:29:23.776382 | ended 2026-06-28 23:39:10.072685
+
+[2026-06-28 23:39:10.102023] 
+ START QUERY: variant_q6_v1.sql
+[2026-06-28 23:39:10.111939]   ▶ run 1 started
+[2026-06-28 23:39:26.795316]   ✔ run 1 finished in 16.6754s
+[2026-06-28 23:39:26.806437]   ▶ run 2 started
+[2026-06-28 23:39:40.992180]   ✔ run 2 finished in 14.1758s
+[2026-06-28 23:39:41.002446]   ▶ run 3 started
+[2026-06-28 23:39:52.662981]   ✔ run 3 finished in 11.6488s
+[2026-06-28 23:39:52.672039]  generating plan for variant_q6_v1.sql
+[2026-06-28 23:40:05.197842]   ✔ plan saved: experiment/runs/plans/variant_q6_v1.json
+[2026-06-28 23:40:05.207514] 🏁 END QUERY: variant_q6_v1.sql | started 2026-06-28 23:39:10.103123 | ended 2026-06-28 23:40:05.199229
+
+[2026-06-28 23:40:05.214415] 
+ START QUERY: variant_q6_v2.sql
+[2026-06-28 23:40:05.223721]   ▶ run 1 started
+[2026-06-28 23:40:18.562035]   ✔ run 1 finished in 13.3304s
+[2026-06-28 23:40:18.571342]   ▶ run 2 started
+[2026-06-28 23:40:29.621134]   ✔ run 2 finished in 11.0379s
+[2026-06-28 23:40:29.634883]   ▶ run 3 started
+[2026-06-28 23:40:41.995338]   ✔ run 3 finished in 12.3501s
+[2026-06-28 23:40:42.005050]  generating plan for variant_q6_v2.sql
+[2026-06-28 23:40:52.477142]   ✔ plan saved: experiment/runs/plans/variant_q6_v2.json
+[2026-06-28 23:40:52.489352] 🏁 END QUERY: variant_q6_v2.sql | started 2026-06-28 23:40:05.215870 | ended 2026-06-28 23:40:52.478858
+
+[2026-06-28 23:40:52.499394] 
+ START QUERY: variant_q6_v3.sql
+[2026-06-28 23:40:52.510650]   ▶ run 1 started
+[2026-06-28 23:41:04.729968]   ✔ run 1 finished in 12.2110s
+[2026-06-28 23:41:04.740326]   ▶ run 2 started
+[2026-06-28 23:41:17.961771]   ✔ run 2 finished in 13.2140s
+[2026-06-28 23:41:17.971618]   ▶ run 3 started
+[2026-06-28 23:41:29.528066]   ✔ run 3 finished in 11.5460s
+[2026-06-28 23:41:29.537368]  generating plan for variant_q6_v3.sql
+[2026-06-28 23:41:42.366675]   ✔ plan saved: experiment/runs/plans/variant_q6_v3.json
+[2026-06-28 23:41:42.375901] 🏁 END QUERY: variant_q6_v3.sql | started 2026-06-28 23:40:52.500975 | ended 2026-06-28 23:41:42.368450
+
+[2026-06-28 23:41:42.382993] 
+ START QUERY: variant_q6_v4.sql
+[2026-06-28 23:41:42.393939]   ▶ run 1 started
+[2026-06-28 23:41:54.263745]   ✔ run 1 finished in 11.8613s
+[2026-06-28 23:41:54.275558]   ▶ run 2 started
+[2026-06-28 23:42:07.951673]   ✔ run 2 finished in 13.6674s
+[2026-06-28 23:42:07.961621]   ▶ run 3 started
+[2026-06-28 23:42:21.534636]   ✔ run 3 finished in 13.5647s
+[2026-06-28 23:42:21.545251]  generating plan for variant_q6_v4.sql
+[2026-06-28 23:42:34.281511]   ✔ plan saved: experiment/runs/plans/variant_q6_v4.json
+[2026-06-28 23:42:34.291013] 🏁 END QUERY: variant_q6_v4.sql | started 2026-06-28 23:41:42.384659 | ended 2026-06-28 23:42:34.283653
+
+[2026-06-28 23:42:34.299148] 
+ START QUERY: variant_q7_v1.sql
+[2026-06-28 23:42:34.310074]   ▶ run 1 started
+[2026-06-28 23:43:04.525018]   ✔ run 1 finished in 30.2074s
+[2026-06-28 23:43:04.535518]   ▶ run 2 started
+[2026-06-28 23:43:29.675477]   ✔ run 2 finished in 25.1319s
+[2026-06-28 23:43:29.687815]   ▶ run 3 started
+[2026-06-28 23:43:55.116409]   ✔ run 3 finished in 25.4202s
+[2026-06-28 23:43:55.129955]  generating plan for variant_q7_v1.sql
+[2026-06-28 23:44:22.441877]   ✔ plan saved: experiment/runs/plans/variant_q7_v1.json
+[2026-06-28 23:44:22.453786] 🏁 END QUERY: variant_q7_v1.sql | started 2026-06-28 23:42:34.301403 | ended 2026-06-28 23:44:22.444263
+
+[2026-06-28 23:44:22.461904] 
+ START QUERY: variant_q7_v2.sql
+[2026-06-28 23:44:22.473738]   ▶ run 1 started
+[2026-06-28 23:44:43.298286]   ✔ run 1 finished in 20.8157s
+[2026-06-28 23:44:43.311086]   ▶ run 2 started
+[2026-06-28 23:45:03.851634]   ✔ run 2 finished in 20.5321s
+[2026-06-28 23:45:03.863000]   ▶ run 3 started
+[2026-06-28 23:45:25.083190]   ✔ run 3 finished in 21.2103s
+[2026-06-28 23:45:25.101722]  generating plan for variant_q7_v2.sql
+[2026-06-28 23:45:45.189075]   ✔ plan saved: experiment/runs/plans/variant_q7_v2.json
+[2026-06-28 23:45:45.200211] 🏁 END QUERY: variant_q7_v2.sql | started 2026-06-28 23:44:22.463479 | ended 2026-06-28 23:45:45.191472
+
+[2026-06-28 23:45:45.208201] 
+ START QUERY: variant_q7_v3.sql
+[2026-06-28 23:45:45.218837]   ▶ run 1 started
+[2026-06-28 23:46:07.038639]   ✔ run 1 finished in 21.8087s
+[2026-06-28 23:46:07.051783]   ▶ run 2 started
+[2026-06-28 23:46:28.329559]   ✔ run 2 finished in 21.2683s
+[2026-06-28 23:46:28.341973]   ▶ run 3 started
+[2026-06-28 23:46:50.753461]   ✔ run 3 finished in 22.4019s
+[2026-06-28 23:46:50.763393]  generating plan for variant_q7_v3.sql
+[2026-06-28 23:47:12.139434]   ✔ plan saved: experiment/runs/plans/variant_q7_v3.json
+[2026-06-28 23:47:12.150180] 🏁 END QUERY: variant_q7_v3.sql | started 2026-06-28 23:45:45.209758 | ended 2026-06-28 23:47:12.141366
+
+[2026-06-28 23:47:12.157444] 
+ START QUERY: variant_q7_v4.sql
+[2026-06-28 23:47:12.167543]   ▶ run 1 started
+[2026-06-28 23:47:31.985055]   ✔ run 1 finished in 19.8090s
+[2026-06-28 23:47:31.994991]   ▶ run 2 started
+[2026-06-28 23:47:53.326881]   ✔ run 2 finished in 21.3227s
+[2026-06-28 23:47:53.336921]   ▶ run 3 started
+[2026-06-28 23:48:13.083323]   ✔ run 3 finished in 19.7364s
+[2026-06-28 23:48:13.095366]  generating plan for variant_q7_v4.sql
+[2026-06-28 23:48:33.784757]   ✔ plan saved: experiment/runs/plans/variant_q7_v4.json
+[2026-06-28 23:48:33.794368] 🏁 END QUERY: variant_q7_v4.sql | started 2026-06-28 23:47:12.158632 | ended 2026-06-28 23:48:33.786742
+
+[2026-06-28 23:48:33.804649] 
+ START QUERY: variant_q8_v1.sql
+[2026-06-28 23:48:33.813814]   ▶ run 1 started
+[2026-06-28 23:50:49.249382]   ✔ run 1 finished in 135.4219s
+[2026-06-28 23:50:49.318827]   ▶ run 2 started
+[2026-06-28 23:53:08.616843]   ✔ run 2 finished in 139.2856s
+[2026-06-28 23:53:08.632956]   ▶ run 3 started
+[2026-06-28 23:55:28.970252]   ✔ run 3 finished in 140.3300s
+[2026-06-28 23:55:28.981100]  generating plan for variant_q8_v1.sql
+[2026-06-28 23:57:48.890419]   ✔ plan saved: experiment/runs/plans/variant_q8_v1.json
+[2026-06-28 23:57:48.901277] 🏁 END QUERY: variant_q8_v1.sql | started 2026-06-28 23:48:33.806096 | ended 2026-06-28 23:57:48.892097
+
+[2026-06-28 23:57:48.913089] 
+ START QUERY: variant_q8_v2.sql
+[2026-06-28 23:57:48.924487]   ▶ run 1 started
+[2026-06-29 00:00:08.873351]   ✔ run 1 finished in 139.9411s
+[2026-06-29 00:00:08.885626]   ▶ run 2 started
+[2026-06-29 00:02:29.362286]   ✔ run 2 finished in 140.4694s
+[2026-06-29 00:02:29.374772]   ▶ run 3 started
+[2026-06-29 00:04:46.276213]   ✔ run 3 finished in 136.8934s
+[2026-06-29 00:04:46.287129]  generating plan for variant_q8_v2.sql
+[2026-06-29 00:07:04.833173]   ✔ plan saved: experiment/runs/plans/variant_q8_v2.json
+[2026-06-29 00:07:04.845008] 🏁 END QUERY: variant_q8_v2.sql | started 2026-06-28 23:57:48.914545 | ended 2026-06-29 00:07:04.836219
+
+[2026-06-29 00:07:04.855959] 
+ START QUERY: variant_q8_v3.sql
+[2026-06-29 00:07:04.863399]   ▶ run 1 started
+[2026-06-29 00:09:24.363282]   ✔ run 1 finished in 139.4915s
+[2026-06-29 00:09:24.374676]   ▶ run 2 started
+[2026-06-29 00:11:44.887527]   ✔ run 2 finished in 140.5042s
+[2026-06-29 00:11:44.897866]   ▶ run 3 started
+[2026-06-29 00:14:02.427880]   ✔ run 3 finished in 137.5222s
+[2026-06-29 00:14:02.440730]  generating plan for variant_q8_v3.sql
+[2026-06-29 00:16:23.238136]   ✔ plan saved: experiment/runs/plans/variant_q8_v3.json
+[2026-06-29 00:16:23.247326] 🏁 END QUERY: variant_q8_v3.sql | started 2026-06-29 00:07:04.857271 | ended 2026-06-29 00:16:23.240436
+
+[2026-06-29 00:16:23.253735] 
+ START QUERY: variant_q8_v4.sql
+[2026-06-29 00:16:23.262648]   ▶ run 1 started
+[2026-06-29 00:18:39.750470]   ✔ run 1 finished in 136.4806s
+[2026-06-29 00:18:39.760676]   ▶ run 2 started
+[2026-06-29 00:21:02.454406]   ✔ run 2 finished in 142.6808s
+[2026-06-29 00:21:02.466654]   ▶ run 3 started
+[2026-06-29 00:23:32.372910]   ✔ run 3 finished in 149.8968s
+[2026-06-29 00:23:32.383998]  generating plan for variant_q8_v4.sql
+[2026-06-29 00:25:53.918567]   ✔ plan saved: experiment/runs/plans/variant_q8_v4.json
+[2026-06-29 00:25:53.929386] 🏁 END QUERY: variant_q8_v4.sql | started 2026-06-29 00:16:23.255115 | ended 2026-06-29 00:25:53.920217
+
+[2026-06-29 00:25:53.938269] 
+ START QUERY: variant_q9_v1.sql
+[2026-06-29 00:25:53.949439]   ▶ run 1 started
+[2026-06-29 00:25:54.825461]   ✔ run 1 finished in 0.8697s
+[2026-06-29 00:25:54.834279]   ▶ run 2 started
+[2026-06-29 00:25:55.006378]   ✔ run 2 finished in 0.1644s
+[2026-06-29 00:25:55.015482]   ▶ run 3 started
+[2026-06-29 00:25:55.197047]   ✔ run 3 finished in 0.1743s
+[2026-06-29 00:25:55.205610]  generating plan for variant_q9_v1.sql
+[2026-06-29 00:25:55.397876]   ✔ plan saved: experiment/runs/plans/variant_q9_v1.json
+[2026-06-29 00:25:55.406326] 🏁 END QUERY: variant_q9_v1.sql | started 2026-06-29 00:25:53.940288 | ended 2026-06-29 00:25:55.399111
+
+[2026-06-29 00:25:55.412714] 
+ START QUERY: variant_q9_v2.sql
+[2026-06-29 00:25:55.420911]   ▶ run 1 started
+[2026-06-29 00:25:55.631224]   ✔ run 1 finished in 0.2019s
+[2026-06-29 00:25:55.639195]   ▶ run 2 started
+[2026-06-29 00:25:55.849442]   ✔ run 2 finished in 0.2029s
+[2026-06-29 00:25:55.859353]   ▶ run 3 started
+[2026-06-29 00:25:56.079185]   ✔ run 3 finished in 0.2112s
+[2026-06-29 00:25:56.088939]  generating plan for variant_q9_v2.sql
+[2026-06-29 00:25:56.287943]   ✔ plan saved: experiment/runs/plans/variant_q9_v2.json
+[2026-06-29 00:25:56.295628] 🏁 END QUERY: variant_q9_v2.sql | started 2026-06-29 00:25:55.413943 | ended 2026-06-29 00:25:56.289139
+
+[2026-06-29 00:25:56.303602] 
+ START QUERY: variant_q9_v3.sql
+[2026-06-29 00:25:56.311514]   ▶ run 1 started
+[2026-06-29 00:25:56.494893]   ✔ run 1 finished in 0.1761s
+[2026-06-29 00:25:56.503544]   ▶ run 2 started
+[2026-06-29 00:25:56.676394]   ✔ run 2 finished in 0.1657s
+[2026-06-29 00:25:56.692145]   ▶ run 3 started
+[2026-06-29 00:25:56.864229]   ✔ run 3 finished in 0.1651s
+[2026-06-29 00:25:56.872569]  generating plan for variant_q9_v3.sql
+[2026-06-29 00:25:57.099709]   ✔ plan saved: experiment/runs/plans/variant_q9_v3.json
+[2026-06-29 00:25:57.106984] 🏁 END QUERY: variant_q9_v3.sql | started 2026-06-29 00:25:56.304749 | ended 2026-06-29 00:25:57.100741
+
+[2026-06-29 00:25:57.115520] 
+ START QUERY: variant_q9_v4.sql
+[2026-06-29 00:25:57.121822]   ▶ run 1 started
+[2026-06-29 00:25:57.309251]   ✔ run 1 finished in 0.1809s
+[2026-06-29 00:25:57.317168]   ▶ run 2 started
+[2026-06-29 00:25:57.522203]   ✔ run 2 finished in 0.1976s
+[2026-06-29 00:25:57.530472]   ▶ run 3 started
+[2026-06-29 00:25:57.741382]   ✔ run 3 finished in 0.2031s
+[2026-06-29 00:25:57.750219]  generating plan for variant_q9_v4.sql
+[2026-06-29 00:25:57.969065]   ✔ plan saved: experiment/runs/plans/variant_q9_v4.json
+[2026-06-29 00:25:57.977932] 🏁 END QUERY: variant_q9_v4.sql | started 2026-06-29 00:25:57.116679 | ended 2026-06-29 00:25:57.970360
+
+[2026-06-29 00:25:58.041556] 
+✔ Saved CSV: experiment/runs/raw_output/results.csv
+[2026-06-29 00:25:58.052997] ✔ Saved plans: experiment/runs/plans

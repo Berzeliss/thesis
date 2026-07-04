@@ -1,0 +1,213 @@
+[
+  {
+    "Plan": {
+      "Node Type": "Sort",
+      "Parallel Aware": false,
+      "Async Capable": false,
+      "Startup Cost": 370984.25,
+      "Total Cost": 371287.95,
+      "Plan Rows": 121477,
+      "Plan Width": 44,
+      "Actual Startup Time": 5180.608,
+      "Actual Total Time": 5186.783,
+      "Actual Rows": 17400,
+      "Actual Loops": 1,
+      "Sort Key": [
+        "(count(DISTINCT partsupp.ps_suppkey)) DESC",
+        "part.p_brand",
+        "part.p_type",
+        "part.p_size"
+      ],
+      "Sort Method": "quicksort",
+      "Sort Space Used": 1855,
+      "Sort Space Type": "Memory",
+      "Plans": [
+        {
+          "Node Type": "Aggregate",
+          "Strategy": "Sorted",
+          "Partial Mode": "Simple",
+          "Parent Relationship": "Outer",
+          "Parallel Aware": false,
+          "Async Capable": false,
+          "Startup Cost": 308598.28,
+          "Total Cost": 356987.32,
+          "Plan Rows": 121477,
+          "Plan Width": 44,
+          "Actual Startup Time": 4263.659,
+          "Actual Total Time": 5089.078,
+          "Actual Rows": 17400,
+          "Actual Loops": 1,
+          "Group Key": [
+            "part.p_brand",
+            "part.p_type",
+            "part.p_size"
+          ],
+          "Plans": [
+            {
+              "Node Type": "Gather Merge",
+              "Parent Relationship": "Outer",
+              "Parallel Aware": false,
+              "Async Capable": false,
+              "Startup Cost": 308598.28,
+              "Total Cost": 352042.37,
+              "Plan Rows": 373018,
+              "Plan Width": 40,
+              "Actual Startup Time": 4263.534,
+              "Actual Total Time": 4880.003,
+              "Actual Rows": 740085,
+              "Actual Loops": 1,
+              "Workers Planned": 2,
+              "Workers Launched": 2,
+              "Plans": [
+                {
+                  "Node Type": "Sort",
+                  "Parent Relationship": "Outer",
+                  "Parallel Aware": false,
+                  "Async Capable": false,
+                  "Startup Cost": 307598.26,
+                  "Total Cost": 307986.82,
+                  "Plan Rows": 155424,
+                  "Plan Width": 40,
+                  "Actual Startup Time": 4075.664,
+                  "Actual Total Time": 4314.559,
+                  "Actual Rows": 246695,
+                  "Actual Loops": 3,
+                  "Sort Key": [
+                    "part.p_brand",
+                    "part.p_type",
+                    "part.p_size",
+                    "partsupp.ps_suppkey"
+                  ],
+                  "Sort Method": "external merge",
+                  "Sort Space Used": 12272,
+                  "Sort Space Type": "Disk",
+                  "Workers": [
+                    {
+                      "Worker Number": 0,
+                      "Sort Method": "external merge",
+                      "Sort Space Used": 12408,
+                      "Sort Space Type": "Disk"
+                    },
+                    {
+                      "Worker Number": 1,
+                      "Sort Method": "external merge",
+                      "Sort Space Used": 13128,
+                      "Sort Space Type": "Disk"
+                    }
+                  ],
+                  "Plans": [
+                    {
+                      "Node Type": "Hash Join",
+                      "Parent Relationship": "Outer",
+                      "Parallel Aware": true,
+                      "Async Capable": false,
+                      "Join Type": "Inner",
+                      "Startup Cost": 66308.64,
+                      "Total Cost": 289943.66,
+                      "Plan Rows": 155424,
+                      "Plan Width": 40,
+                      "Actual Startup Time": 701.519,
+                      "Actual Total Time": 2843.825,
+                      "Actual Rows": 246695,
+                      "Actual Loops": 3,
+                      "Inner Unique": false,
+                      "Hash Cond": "(partsupp.ps_partkey = part.p_partkey)",
+                      "Workers": [],
+                      "Plans": [
+                        {
+                          "Node Type": "Seq Scan",
+                          "Parent Relationship": "Outer",
+                          "Parallel Aware": true,
+                          "Async Capable": false,
+                          "Relation Name": "partsupp",
+                          "Alias": "partsupp",
+                          "Startup Cost": 3514.03,
+                          "Total Cost": 220249.52,
+                          "Plan Rows": 1667180,
+                          "Plan Width": 8,
+                          "Actual Startup Time": 26.68,
+                          "Actual Total Time": 1667.024,
+                          "Actual Rows": 2665173,
+                          "Actual Loops": 3,
+                          "Filter": "(NOT (ANY (ps_suppkey = (hashed SubPlan 1).col1)))",
+                          "Rows Removed by Filter": 1493,
+                          "Workers": [],
+                          "Plans": [
+                            {
+                              "Node Type": "Seq Scan",
+                              "Parent Relationship": "SubPlan",
+                              "Subplan Name": "SubPlan 1",
+                              "Parallel Aware": false,
+                              "Async Capable": false,
+                              "Relation Name": "supplier",
+                              "Alias": "supplier",
+                              "Startup Cost": 0.0,
+                              "Total Cost": 3514.0,
+                              "Plan Rows": 10,
+                              "Plan Width": 4,
+                              "Actual Startup Time": 0.632,
+                              "Actual Total Time": 26.193,
+                              "Actual Rows": 56,
+                              "Actual Loops": 3,
+                              "Filter": "((s_comment)::text ~~ '%Customer%Complaints%'::text)",
+                              "Rows Removed by Filter": 99944,
+                              "Workers": []
+                            }
+                          ]
+                        },
+                        {
+                          "Node Type": "Hash",
+                          "Parent Relationship": "Inner",
+                          "Parallel Aware": true,
+                          "Async Capable": false,
+                          "Startup Cost": 61823.59,
+                          "Total Cost": 61823.59,
+                          "Plan Rows": 77682,
+                          "Plan Width": 40,
+                          "Actual Startup Time": 674.368,
+                          "Actual Total Time": 674.369,
+                          "Actual Rows": 61710,
+                          "Actual Loops": 3,
+                          "Hash Buckets": 262144,
+                          "Original Hash Buckets": 262144,
+                          "Hash Batches": 1,
+                          "Original Hash Batches": 1,
+                          "Peak Memory Usage": 15904,
+                          "Workers": [],
+                          "Plans": [
+                            {
+                              "Node Type": "Seq Scan",
+                              "Parent Relationship": "Outer",
+                              "Parallel Aware": true,
+                              "Async Capable": false,
+                              "Relation Name": "part",
+                              "Alias": "part",
+                              "Startup Cost": 0.0,
+                              "Total Cost": 61823.59,
+                              "Plan Rows": 77682,
+                              "Plan Width": 40,
+                              "Actual Startup Time": 0.632,
+                              "Actual Total Time": 642.584,
+                              "Actual Rows": 61710,
+                              "Actual Loops": 3,
+                              "Filter": "((p_brand <> 'Brand#45'::bpchar) AND ((p_type)::text !~~ 'MEDIUM POLISHED%'::text) AND (p_size = ANY ('{5,15,25,35,45,55,65,75}'::integer[])))",
+                              "Rows Removed by Filter": 604957,
+                              "Workers": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Planning Time": 0.36,
+    "Triggers": [],
+    "Execution Time": 5200.528
+  }
+]
