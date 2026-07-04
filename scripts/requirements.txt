@@ -1,3 +1,5 @@
 psycopg2-binary
 pandas
 tqdm
+numpy
+scikit-learn
