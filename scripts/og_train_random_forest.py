@@ -1,31 +1,17 @@
 import pandas as pd
 import os
-import joblib
 from datetime import datetime
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
-EXPERIMENT_NAME = "random_forest_baseline_v1"
-
 DATASET_PATH = "/mnt/c/tpch/experiment/features/ml_dataset.csv"
-
-MODEL_PATH = f"/mnt/c/tpch/experiment/models/{EXPERIMENT_NAME}.pkl"
-
-RESULTS_PATH = f"/mnt/c/tpch/experiment/results/"
-
-PREDICTIONS_PATH = (
-    f"{RESULTS_PATH}{EXPERIMENT_NAME}_predictions.csv"
-)
-
-METRICS_PATH = (
-    f"{RESULTS_PATH}{EXPERIMENT_NAME}_metrics.txt"
-)
-
 LOG_PATH = "/mnt/c/tpch/experiment/logs/random_forest_log.txt"
 
 def write_log(message):
-
+    """
+    Prints message to terminal and writes it to log file.
+    """
     print(message)
 
     with open(LOG_PATH, "a", encoding="utf-8") as log_file:
@@ -33,13 +19,11 @@ def write_log(message):
 
 def train_random_forest():
 
-    os.makedirs("/mnt/c/tpch/experiment/models", exist_ok=True)
-    os.makedirs("/mnt/c/tpch/experiment/results", exist_ok=True)
-    os.makedirs("/mnt/c/tpch/experiment/logs", exist_ok=True)
+    os.makedirs("../experiment/logs", exist_ok=True)
 
 
     write_log("\n====================================")
-    write_log(f"Experiment: {EXPERIMENT_NAME}")
+    write_log("Random Forest Training Run")
     write_log(
         "Date: " + datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     )
@@ -58,6 +42,7 @@ def train_random_forest():
     X = df.drop(columns=["avg_execution_time"])
     y = df["avg_execution_time"]
 
+
     write_log(
         f"Number of features: {X.shape[1]}"
     )
@@ -70,8 +55,13 @@ def train_random_forest():
     )
 
     write_log("\nDataset split:")
-    write_log(f"Training samples: {len(X_train)}")
-    write_log(f"Testing samples: {len(X_test)}")
+    write_log(
+        f"Training samples: {len(X_train)}"
+    )
+    write_log(
+        f"Testing samples: {len(X_test)}"
+    )
+
     write_log("\nCreating Random Forest model...")
 
     model = RandomForestRegressor(
@@ -96,64 +86,20 @@ def train_random_forest():
 
     mse = mean_squared_error(
         y_test,
-        predictions
+        predictions,
     )
     rmse = mse ** 0.5
 
     write_log("\n===== BASELINE MODEL RESULTS =====")
-    write_log(f"MAE:  {mae:.4f}")
-    write_log(f"RMSE: {rmse:.4f}")
-
-    joblib.dump(
-        model,
-        MODEL_PATH
-    )
-
     write_log(
-        f"\nModel saved: {MODEL_PATH}"
-    )
-
-    predictions_df = pd.DataFrame(
-        {
-            "actual_execution_time": y_test.values,
-            "predicted_execution_time": predictions,
-            "error": predictions - y_test.values
-        }
-    )
-
-    predictions_df.to_csv(
-        PREDICTIONS_PATH,
-        index=False
-    )
-
-    write_log(
-        f"Predictions saved: {PREDICTIONS_PATH}"
-    )
-
-    with open(METRICS_PATH, "w", encoding="utf-8") as file:
-
-        file.write(
-            f"Experiment: {EXPERIMENT_NAME}\n\n"
-        )
-        file.write(
-            f"Training samples: {len(X_train)}\n"
-        )
-        file.write(
-            f"Testing samples: {len(X_test)}\n\n"
-        )
-        file.write(
-            f"MAE: {mae:.4f}\n"
-        )
-        file.write(
-            f"RMSE: {rmse:.4f}\n"
-        )
-
-    write_log(
-        f"Metrics saved: {METRICS_PATH}"
+        f"MAE:  {mae:.4f}"
     )
     write_log(
-        "\nExperiment completed successfully."
+        f"RMSE: {rmse:.4f}"
     )
+
+    write_log("\nRun completed successfully.")
+    write_log("====================================\n")
 
 if __name__ == "__main__":
     train_random_forest()

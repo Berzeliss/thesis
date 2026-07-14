@@ -23,3 +23,30 @@ RMSE: 10.1273
 Run completed successfully.
 ====================================
 
+
+====================================
+Experiment: random_forest_baseline_v1
+Date: 2026-07-14 17:12:51
+====================================
+
+Loading dataset...
+Dataset loaded: 91 rows, 17 columns
+Number of features: 15
+
+Dataset split:
+Training samples: 72
+Testing samples: 19
+
+Creating Random Forest model...
+Training model...
+Model training completed.
+
+===== BASELINE MODEL RESULTS =====
+MAE:  4.1781
+RMSE: 10.1273
+
+Model saved: /mnt/c/tpch/experiment/models/random_forest_baseline_v1.pkl
+Predictions saved: /mnt/c/tpch/experiment/results/random_forest_baseline_v1_predictions.csv
+Metrics saved: /mnt/c/tpch/experiment/results/random_forest_baseline_v1_metrics.txt
+
+Experiment completed successfully.

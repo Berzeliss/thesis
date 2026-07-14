@@ -1,0 +1,7 @@
+Experiment: random_forest_baseline_v1
+
+Training samples: 72
+Testing samples: 19
+
+MAE: 4.1781
+RMSE: 10.1273
