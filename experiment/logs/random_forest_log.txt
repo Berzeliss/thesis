@@ -1,7 +1,7 @@
 
 ====================================
 Random Forest Training Run
-Date: 2026-07-14 17:01:39
+Date: 2026-07-14 18:06:50
 ====================================
 
 Loading dataset...
@@ -17,8 +17,8 @@ Training model...
 Model training completed.
 
 ===== BASELINE MODEL RESULTS =====
-MAE:  4.1781
-RMSE: 10.1273
+MAE:  4.2820
+RMSE: 10.1539
 
 Run completed successfully.
 ====================================
@@ -26,7 +26,7 @@ Run completed successfully.
 
 ====================================
 Experiment: random_forest_baseline_v1
-Date: 2026-07-14 17:12:51
+Date: 2026-07-14 18:07:49
 ====================================
 
 Loading dataset...
@@ -42,8 +42,8 @@ Training model...
 Model training completed.
 
 ===== BASELINE MODEL RESULTS =====
-MAE:  4.1781
-RMSE: 10.1273
+MAE:  4.2820
+RMSE: 10.1539
 
 Model saved: /mnt/c/tpch/experiment/models/random_forest_baseline_v1.pkl
 Predictions saved: /mnt/c/tpch/experiment/results/random_forest_baseline_v1_predictions.csv
