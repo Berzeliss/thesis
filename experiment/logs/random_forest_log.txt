@@ -1,0 +1,25 @@
+
+====================================
+Random Forest Training Run
+Date: 2026-07-14 17:01:39
+====================================
+
+Loading dataset...
+Dataset loaded: 91 rows, 17 columns
+Number of features: 15
+
+Dataset split:
+Training samples: 72
+Testing samples: 19
+
+Creating Random Forest model...
+Training model...
+Model training completed.
+
+===== BASELINE MODEL RESULTS =====
+MAE:  4.1781
+RMSE: 10.1273
+
+Run completed successfully.
+====================================
+
